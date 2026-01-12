@@ -1,0 +1,52 @@
+[
+  {
+    "word": "apple",
+    "meaning": "りんご",
+    "genre": "果物"
+  },
+  {
+    "word": "dog",
+    "meaning": "犬",
+    "genre": "動物"
+  },
+  {
+    "word": "house",
+    "meaning": "家",
+    "genre": "建物"
+  },
+  {
+    "word": "book",
+    "meaning": "本",
+    "genre": "日用品"
+  },
+  {
+    "word": "car",
+    "meaning": "車",
+    "genre": "乗り物"
+  },
+  {
+    "word": "beautiful",
+    "meaning": "美しい",
+    "genre": "形容詞"
+  },
+  {
+    "word": "run",
+    "meaning": "走る",
+    "genre": "動詞"
+  },
+  {
+    "word": "happy",
+    "meaning": "幸せな",
+    "genre": "形容詞"
+  },
+  {
+    "word": "water",
+    "meaning": "水",
+    "genre": "飲み物"
+  },
+  {
+    "word": "computer",
+    "meaning": "コンピューター",
+    "genre": "電子機器"
+  }
+]
