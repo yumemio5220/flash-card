@@ -20,8 +20,34 @@ const progressFill = document.getElementById('progressFill');
 // JSONデータの読み込み
 async function loadCards() {
     try {
-        const response = await fetch('data.json');
-        allCards = await response.json();
+        // 複数のジャンル別ファイルを読み込む
+        const genres = ['四字熟語']; // 読み込むジャンルのリスト
+        allCards = [];
+
+        for (const genre of genres) {
+            try {
+                const response = await fetch(`data/${genre}.json`);
+                const cards = await response.json();
+                // ファイル名からジャンルを自動設定
+                const cardsWithGenre = cards.map(card => ({
+                    ...card,
+                    genre: genre
+                }));
+                allCards = allCards.concat(cardsWithGenre);
+            } catch (error) {
+                console.warn(`${genre}のデータ読み込みに失敗:`, error);
+            }
+        }
+
+        // 旧data.jsonも読み込む（後方互換性のため）
+        try {
+            const response = await fetch('data.json');
+            const legacyCards = await response.json();
+            allCards = allCards.concat(legacyCards);
+        } catch (error) {
+            console.warn('data.jsonの読み込みをスキップ');
+        }
+
         currentCards = [...allCards];
         populateGenreFilter();
         displayCard();
@@ -58,6 +84,13 @@ function updateCardContent() {
     // ボタンの有効/無効を設定
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === currentCards.length - 1;
+
+    // テキストを再表示
+    setTimeout(() => {
+        wordDisplay.classList.remove('hiding');
+        meaningDisplay.classList.remove('hiding');
+        wordSmall.classList.remove('hiding');
+    }, 10);
 }
 
 // カードを表示
@@ -69,18 +102,20 @@ function displayCard() {
         return;
     }
 
+    // テキストを一時的に非表示にする
+    wordDisplay.classList.add('hiding');
+    meaningDisplay.classList.add('hiding');
+    wordSmall.classList.add('hiding');
+
     // カードが裏返っている場合は、先に表に戻してから内容を更新
     if (isFlipped) {
-        // 裏面の内容を先にクリア
-        meaningDisplay.textContent = '';
-        wordSmall.textContent = '';
-
         flashcard.classList.remove('flipped');
         isFlipped = false;
         // アニメーション途中で内容を更新
         setTimeout(updateCardContent, 300);
     } else {
-        updateCardContent();
+        // 少し待ってから内容を更新
+        setTimeout(updateCardContent, 150);
     }
 }
 
@@ -139,7 +174,7 @@ document.addEventListener('keydown', (e) => {
     } else if (e.key === 'ArrowRight' && currentIndex < currentCards.length - 1) {
         currentIndex++;
         displayCard();
-    } else if (e.key === ' ' || e.key === 'Enter') {
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
         flashcard.classList.toggle('flipped');
         isFlipped = !isFlipped;

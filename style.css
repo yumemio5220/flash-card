@@ -144,6 +144,12 @@ h1 {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+    transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+.word.hiding {
+    opacity: 0;
+    filter: blur(10px);
 }
 
 .tap-hint {
@@ -157,12 +163,24 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+.meaning.hiding {
+    opacity: 0;
+    filter: blur(10px);
 }
 
 .word-small {
     font-size: 1.2rem;
     opacity: 0.8;
     text-align: center;
+    transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+.word-small.hiding {
+    opacity: 0;
+    filter: blur(10px);
 }
 
 .navigation {
