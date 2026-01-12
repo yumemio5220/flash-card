@@ -135,5 +135,10 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// iOSのスクロールを防止
+document.body.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+}, { passive: false });
+
 // 初期化
 loadCards();
