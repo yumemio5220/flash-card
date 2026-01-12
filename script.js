@@ -71,10 +71,14 @@ function displayCard() {
 
     // カードが裏返っている場合は、先に表に戻してから内容を更新
     if (isFlipped) {
+        // 裏面の内容を先にクリア
+        meaningDisplay.textContent = '';
+        wordSmall.textContent = '';
+
         flashcard.classList.remove('flipped');
         isFlipped = false;
-        // アニメーション完了を待ってから内容を更新（0.6秒 = CSSのtransition時間）
-        setTimeout(updateCardContent, 300);
+        // アニメーション完了を待ってから内容を更新（CSSのtransition 0.6秒）
+        setTimeout(updateCardContent, 600);
     } else {
         updateCardContent();
     }
