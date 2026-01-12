@@ -77,8 +77,8 @@ function displayCard() {
 
         flashcard.classList.remove('flipped');
         isFlipped = false;
-        // アニメーション完了を待ってから内容を更新（CSSのtransition 0.6秒）
-        setTimeout(updateCardContent, 600);
+        // アニメーション途中で内容を更新
+        setTimeout(updateCardContent, 300);
     } else {
         updateCardContent();
     }
