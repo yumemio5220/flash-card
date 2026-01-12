@@ -7,6 +7,8 @@
 html {
     height: 100%;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 body {
@@ -19,6 +21,11 @@ body {
     align-items: center;
     padding: 20px;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overscroll-behavior: none;
 }
 
 .container {
@@ -218,15 +225,8 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    html {
-        overflow: auto;
-    }
-
     body {
-        height: auto;
-        min-height: 100dvh;
-        min-height: 100vh;
-        overflow: auto;
+        padding: 15px;
     }
 
     h1 {
