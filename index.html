@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>フラッシュカード</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧠フラッシュカード</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>フラッシュカード</h1>
+      <h1>フラッシュカード</h1>
 
-        <div class="controls">
-            <select id="genreFilter">
-                <option value="all">全てのジャンル</option>
-            </select>
-            <button id="shuffleBtn">シャッフル</button>
-        </div>
+      <div class="controls">
+        <select id="genreFilter">
+          <option value="all">全てのジャンル</option>
+        </select>
+        <button id="shuffleBtn">シャッフル</button>
+      </div>
 
-        <div class="card-container">
-            <div class="card" id="flashcard">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="genre-tag" id="genreTag"></div>
-                        <div class="word" id="wordDisplay"></div>
-                        <div class="tap-hint">タップして意味を表示</div>
-                    </div>
-                    <div class="card-back">
-                        <div class="genre-tag" id="genreTagBack"></div>
-                        <div class="meaning" id="meaningDisplay"></div>
-                        <div class="word-small" id="wordSmall"></div>
-                    </div>
-                </div>
+      <div class="card-container">
+        <div class="card" id="flashcard">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="genre-tag" id="genreTag"></div>
+              <div class="word" id="wordDisplay"></div>
+              <div class="tap-hint">タップして意味を表示</div>
             </div>
+            <div class="card-back">
+              <div class="genre-tag" id="genreTagBack"></div>
+              <div class="meaning" id="meaningDisplay"></div>
+              <div class="word-small" id="wordSmall"></div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="navigation">
-            <button id="prevBtn">← 前へ</button>
-            <span id="cardCounter">1 / 10</span>
-            <button id="nextBtn">次へ →</button>
-        </div>
+      <div class="navigation">
+        <button id="prevBtn">← 前へ</button>
+        <span id="cardCounter">1 / 10</span>
+        <button id="nextBtn">次へ →</button>
+      </div>
 
-        <div class="progress-bar">
-            <div class="progress-fill" id="progressFill"></div>
-        </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
