@@ -42,15 +42,8 @@ function populateGenreFilter() {
     });
 }
 
-// カードを表示
-function displayCard() {
-    if (currentCards.length === 0) {
-        wordDisplay.textContent = 'カードがありません';
-        meaningDisplay.textContent = '';
-        genreTag.textContent = '';
-        return;
-    }
-
+// カードの内容を更新
+function updateCardContent() {
     const card = currentCards[currentIndex];
     wordDisplay.textContent = card.word;
     meaningDisplay.textContent = card.meaning;
@@ -65,11 +58,25 @@ function displayCard() {
     // ボタンの有効/無効を設定
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === currentCards.length - 1;
+}
 
-    // カードを表にリセット
+// カードを表示
+function displayCard() {
+    if (currentCards.length === 0) {
+        wordDisplay.textContent = 'カードがありません';
+        meaningDisplay.textContent = '';
+        genreTag.textContent = '';
+        return;
+    }
+
+    // カードが裏返っている場合は、先に表に戻してから内容を更新
     if (isFlipped) {
         flashcard.classList.remove('flipped');
         isFlipped = false;
+        // アニメーション完了を待ってから内容を更新（0.6秒 = CSSのtransition時間）
+        setTimeout(updateCardContent, 300);
+    } else {
+        updateCardContent();
     }
 }
 
