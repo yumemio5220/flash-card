@@ -20,10 +20,19 @@ const progressFill = document.getElementById('progressFill');
 // JSONデータの読み込み
 async function loadCards() {
     try {
-        // 複数のジャンル別ファイルを読み込む
-        const genres = ['四字熟語']; // 読み込むジャンルのリスト
         allCards = [];
 
+        // manifestファイルからジャンルリストを取得
+        let genres = [];
+        try {
+            const manifestResponse = await fetch('data/manifest.json');
+            const manifest = await manifestResponse.json();
+            genres = manifest.genres || [];
+        } catch (error) {
+            console.warn('manifest.jsonの読み込みに失敗:', error);
+        }
+
+        // 各ジャンルのデータを読み込む
         for (const genre of genres) {
             try {
                 const response = await fetch(`data/${genre}.json`);
@@ -37,15 +46,6 @@ async function loadCards() {
             } catch (error) {
                 console.warn(`${genre}のデータ読み込みに失敗:`, error);
             }
-        }
-
-        // 旧data.jsonも読み込む（後方互換性のため）
-        try {
-            const response = await fetch('data.json');
-            const legacyCards = await response.json();
-            allCards = allCards.concat(legacyCards);
-        } catch (error) {
-            console.warn('data.jsonの読み込みをスキップ');
         }
 
         currentCards = [...allCards];
