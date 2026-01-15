@@ -76,9 +76,17 @@ function populateGenreFilter() {
 // カードの内容を更新
 function updateCardContent() {
     const card = currentCards[currentIndex];
-    wordDisplay.textContent = card.word;
+
+    // readingフィールドがある場合はrubyタグで表示
+    if (card.reading) {
+        wordDisplay.innerHTML = `<ruby>${card.word}<rt>${card.reading}</rt></ruby>`;
+        wordSmall.innerHTML = `<ruby>${card.word}<rt>${card.reading}</rt></ruby>`;
+    } else {
+        wordDisplay.textContent = card.word;
+        wordSmall.textContent = card.word;
+    }
+
     meaningDisplay.textContent = card.meaning;
-    wordSmall.textContent = card.word;
     genreTag.textContent = card.genre;
     genreTagBack.textContent = card.genre;
 
