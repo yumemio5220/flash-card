@@ -48,8 +48,13 @@ async function loadCards() {
             }
         }
 
-        currentCards = [...allCards];
         populateGenreFilter();
+
+        // デフォルトで「家族」ジャンルを選択
+        const defaultGenre = '家族';
+        genreFilter.value = defaultGenre;
+        currentCards = allCards.filter(card => card.genre === defaultGenre);
+
         displayCard();
     } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
