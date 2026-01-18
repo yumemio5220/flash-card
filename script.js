@@ -278,15 +278,45 @@ let touchStartX = 0;
 let touchEndX = 0;
 let touchStartY = 0;
 let touchEndY = 0;
+let isDragging = false;
 
 flashcard.addEventListener('touchstart', (e) => {
+    if (isAnimating) return;
     touchStartX = e.changedTouches[0].screenX;
     touchStartY = e.changedTouches[0].screenY;
+    isDragging = true;
+    flashcard.style.transition = 'none';
+}, { passive: true });
+
+flashcard.addEventListener('touchmove', (e) => {
+    if (!isDragging || isAnimating) return;
+
+    const currentX = e.changedTouches[0].screenX;
+    const currentY = e.changedTouches[0].screenY;
+    const deltaX = currentX - touchStartX;
+    const deltaY = currentY - touchStartY;
+
+    // 横方向のスワイプの場合のみカードを移動
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        const translateX = deltaX;
+        const opacity = Math.max(0.5, 1 - Math.abs(deltaX) / 400);
+        flashcard.style.transform = `translateX(${translateX}px)`;
+        flashcard.style.opacity = opacity;
+    }
 }, { passive: true });
 
 flashcard.addEventListener('touchend', (e) => {
+    if (!isDragging || isAnimating) return;
+
     touchEndX = e.changedTouches[0].screenX;
     touchEndY = e.changedTouches[0].screenY;
+    isDragging = false;
+
+    // transitionを戻す
+    flashcard.style.transition = '';
+    flashcard.style.transform = '';
+    flashcard.style.opacity = '';
+
     handleSwipe();
 }, { passive: true });
 
