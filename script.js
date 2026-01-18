@@ -220,5 +220,45 @@ document.body.addEventListener('touchmove', (e) => {
     e.preventDefault();
 }, { passive: false });
 
+// スワイプ操作
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+
+flashcard.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+}, { passive: true });
+
+flashcard.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    handleSwipe();
+}, { passive: true });
+
+function handleSwipe() {
+    const swipeThreshold = 50; // スワイプと判定する最小距離
+    const horizontalSwipe = Math.abs(touchEndX - touchStartX);
+    const verticalSwipe = Math.abs(touchEndY - touchStartY);
+
+    // 横方向のスワイプが縦方向より大きい場合のみ処理
+    if (horizontalSwipe > verticalSwipe && horizontalSwipe > swipeThreshold) {
+        if (touchEndX < touchStartX) {
+            // 左にスワイプ（次へ）
+            if (currentIndex < currentCards.length - 1) {
+                currentIndex++;
+                displayCard();
+            }
+        } else {
+            // 右にスワイプ（前へ）
+            if (currentIndex > 0) {
+                currentIndex--;
+                displayCard();
+            }
+        }
+    }
+}
+
 // 初期化
 loadCards();
