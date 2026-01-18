@@ -2,6 +2,7 @@ let allCards = [];
 let currentCards = [];
 let currentIndex = 0;
 let isFlipped = false;
+let isReversed = false;
 
 // DOM要素
 const flashcard = document.getElementById('flashcard');
@@ -11,6 +12,7 @@ const wordSmall = document.getElementById('wordSmall');
 const genreTag = document.getElementById('genreTag');
 const genreTagBack = document.getElementById('genreTagBack');
 const genreFilter = document.getElementById('genreFilter');
+const reverseBtn = document.getElementById('reverseBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -77,16 +79,28 @@ function populateGenreFilter() {
 function updateCardContent() {
     const card = currentCards[currentIndex];
 
-    // readingフィールドがある場合はrubyタグで表示
-    if (card.reading) {
+    if (isReversed && card.reading) {
+        // 反転モード時（ふりがながある場合）: 意味を問題に、単語＋ふりがなを答えに
+        wordDisplay.textContent = card.meaning;
+        meaningDisplay.innerHTML = `<ruby>${card.word}<rt>${card.reading}</rt></ruby>`;
+        wordSmall.textContent = card.meaning;
+    } else if (isReversed) {
+        // 反転モード時（ふりがながない場合）: 意味を問題に、単語を答えに
+        wordDisplay.textContent = card.meaning;
+        meaningDisplay.textContent = card.word;
+        wordSmall.textContent = card.meaning;
+    } else if (card.reading) {
+        // 通常モード時（ふりがながある場合）: 単語＋ふりがなを問題に、意味を答えに
         wordDisplay.innerHTML = `<ruby>${card.word}<rt>${card.reading}</rt></ruby>`;
+        meaningDisplay.textContent = card.meaning;
         wordSmall.innerHTML = `<ruby>${card.word}<rt>${card.reading}</rt></ruby>`;
     } else {
+        // 通常モード時（ふりがながない場合）: 単語を問題に、意味を答えに
         wordDisplay.textContent = card.word;
+        meaningDisplay.textContent = card.meaning;
         wordSmall.textContent = card.word;
     }
 
-    meaningDisplay.textContent = card.meaning;
     genreTag.textContent = card.genre;
     genreTagBack.textContent = card.genre;
 
@@ -171,6 +185,13 @@ nextBtn.addEventListener('click', () => {
         currentIndex++;
         displayCard();
     }
+});
+
+reverseBtn.addEventListener('click', () => {
+    isReversed = !isReversed;
+    reverseBtn.textContent = isReversed ? '反転解除' : '反転';
+    reverseBtn.style.background = isReversed ? '#4ecdc4' : '#ff6b6b';
+    displayCard();
 });
 
 shuffleBtn.addEventListener('click', shuffleCards);
