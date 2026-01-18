@@ -3,6 +3,7 @@ let currentCards = [];
 let currentIndex = 0;
 let isFlipped = false;
 let isReversed = false;
+let isAnimating = false;
 
 // DOM要素
 const flashcard = document.getElementById('flashcard');
@@ -120,12 +121,17 @@ function updateCardContent() {
     }, 10);
 }
 
-// カードを表示
-function displayCard() {
+// カードを表示（方向指定可能）
+function displayCard(direction = 'none') {
     if (currentCards.length === 0) {
         wordDisplay.textContent = 'カードがありません';
         meaningDisplay.textContent = '';
         genreTag.textContent = '';
+        return;
+    }
+
+    // アニメーション中は操作を受け付けない
+    if (isAnimating && direction !== 'none') {
         return;
     }
 
@@ -134,14 +140,61 @@ function displayCard() {
     meaningDisplay.classList.add('hiding');
     wordSmall.classList.add('hiding');
 
-    // カードが裏返っている場合は、先に表に戻してから内容を更新
+    // カードが裏返っている場合は、先に表に戻す
     if (isFlipped) {
         flashcard.classList.remove('flipped');
         isFlipped = false;
-        // アニメーション途中で内容を更新
-        setTimeout(updateCardContent, 300);
+    }
+
+    // スライドアニメーション
+    if (direction === 'next') {
+        isAnimating = true;
+        // 現在のカードを左に移動
+        flashcard.classList.add('slide-left');
+
+        setTimeout(() => {
+            // 新しいカードを右側に配置（transitionなし）
+            flashcard.style.transition = 'none';
+            flashcard.classList.remove('slide-left');
+            flashcard.classList.add('slide-from-right');
+            updateCardContent();
+
+            // 少し待ってからtransitionを再開して中央に移動
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    flashcard.style.transition = '';
+                    flashcard.classList.remove('slide-from-right');
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 300);
+                });
+            });
+        }, 300);
+    } else if (direction === 'prev') {
+        isAnimating = true;
+        // 現在のカードを右に移動
+        flashcard.classList.add('slide-right');
+
+        setTimeout(() => {
+            // 新しいカードを左側に配置（transitionなし）
+            flashcard.style.transition = 'none';
+            flashcard.classList.remove('slide-right');
+            flashcard.classList.add('slide-from-left');
+            updateCardContent();
+
+            // 少し待ってからtransitionを再開して中央に移動
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    flashcard.style.transition = '';
+                    flashcard.classList.remove('slide-from-left');
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 300);
+                });
+            });
+        }, 300);
     } else {
-        // 少し待ってから内容を更新
+        // 方向指定なし（シャッフル、ジャンル変更など）
         setTimeout(updateCardContent, 150);
     }
 }
@@ -174,16 +227,16 @@ flashcard.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
+    if (currentIndex > 0 && !isAnimating) {
         currentIndex--;
-        displayCard();
+        displayCard('prev');
     }
 });
 
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < currentCards.length - 1) {
+    if (currentIndex < currentCards.length - 1 && !isAnimating) {
         currentIndex++;
-        displayCard();
+        displayCard('next');
     }
 });
 
@@ -202,12 +255,12 @@ genreFilter.addEventListener('change', (e) => {
 
 // キーボード操作
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+    if (e.key === 'ArrowLeft' && currentIndex > 0 && !isAnimating) {
         currentIndex--;
-        displayCard();
-    } else if (e.key === 'ArrowRight' && currentIndex < currentCards.length - 1) {
+        displayCard('prev');
+    } else if (e.key === 'ArrowRight' && currentIndex < currentCards.length - 1 && !isAnimating) {
         currentIndex++;
-        displayCard();
+        displayCard('next');
     } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
         flashcard.classList.toggle('flipped');
@@ -243,18 +296,18 @@ function handleSwipe() {
     const verticalSwipe = Math.abs(touchEndY - touchStartY);
 
     // 横方向のスワイプが縦方向より大きい場合のみ処理
-    if (horizontalSwipe > verticalSwipe && horizontalSwipe > swipeThreshold) {
+    if (horizontalSwipe > verticalSwipe && horizontalSwipe > swipeThreshold && !isAnimating) {
         if (touchEndX < touchStartX) {
             // 左にスワイプ（次へ）
             if (currentIndex < currentCards.length - 1) {
                 currentIndex++;
-                displayCard();
+                displayCard('next');
             }
         } else {
             // 右にスワイプ（前へ）
             if (currentIndex > 0) {
                 currentIndex--;
-                displayCard();
+                displayCard('prev');
             }
         }
     }
