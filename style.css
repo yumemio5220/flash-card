@@ -61,21 +61,54 @@ h1 {
 }
 
 #reverseBtn, #shuffleBtn {
-    padding: 10px 30px;
+    padding: 12px 32px;
     border: none;
-    border-radius: 25px;
-    background: #ff6b6b;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    overflow: hidden;
+}
+
+#reverseBtn::before, #shuffleBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#reverseBtn:hover::before, #shuffleBtn:hover::before {
+    width: 300px;
+    height: 300px;
 }
 
 #reverseBtn:hover, #shuffleBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+#reverseBtn:active, #shuffleBtn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+#reverseBtn.active {
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+}
+
+#reverseBtn.active:hover {
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.6);
 }
 
 .card-container {
@@ -269,36 +302,69 @@ h1 {
     }
 
     h1 {
-        font-size: 2rem;
-        margin-bottom: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .controls {
-        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    #genreFilter {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .controls > div {
+        display: flex;
+        gap: 10px;
+    }
+
+    #reverseBtn, #shuffleBtn {
+        flex: 1;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 
     .card-container {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .card {
-        height: 350px;
+        height: 300px;
     }
 
     .word {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        padding: 0 15px;
     }
 
     .meaning {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+
+    .word-small {
+        font-size: 1rem;
     }
 
     .navigation {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .navigation button {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+
+    #cardCounter {
+        font-size: 1rem;
+    }
+
+    .genre-tag {
+        font-size: 0.8rem;
+        padding: 4px 12px;
     }
 }

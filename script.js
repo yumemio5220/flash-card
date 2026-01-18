@@ -189,8 +189,8 @@ nextBtn.addEventListener('click', () => {
 
 reverseBtn.addEventListener('click', () => {
     isReversed = !isReversed;
-    reverseBtn.textContent = isReversed ? '反転解除' : '反転';
-    reverseBtn.style.background = isReversed ? '#4ecdc4' : '#ff6b6b';
+    reverseBtn.textContent = isReversed ? '✓ 反転中' : '⇄ 反転';
+    reverseBtn.classList.toggle('active', isReversed);
     displayCard();
 });
 
