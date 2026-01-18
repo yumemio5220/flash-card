@@ -120,6 +120,31 @@ h1 {
     transition: transform 0.1s;
 }
 
+.card.hint-swipe {
+    animation: swipeHint 1.5s ease-in-out;
+}
+
+@keyframes swipeHint {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(20px);
+    }
+    35% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    65% {
+        transform: translateX(-15px);
+    }
+    80% {
+        transform: translateX(0);
+    }
+}
+
 .card.slide-left {
     transform: translateX(-100%);
     opacity: 0;

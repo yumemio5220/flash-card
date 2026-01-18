@@ -59,6 +59,18 @@ async function loadCards() {
         currentCards = allCards.filter(card => card.genre === defaultGenre);
 
         displayCard();
+
+        // 初回のみスワイプヒントアニメーションを表示
+        const hasSeenHint = localStorage.getItem('hasSeenSwipeHint');
+        if (!hasSeenHint) {
+            setTimeout(() => {
+                flashcard.classList.add('hint-swipe');
+                setTimeout(() => {
+                    flashcard.classList.remove('hint-swipe');
+                }, 1500);
+                localStorage.setItem('hasSeenSwipeHint', 'true');
+            }, 500);
+        }
     } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
         wordDisplay.textContent = 'データを読み込めませんでした';
