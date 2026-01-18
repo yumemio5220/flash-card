@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     min-height: 100%;
     min-height: 100dvh;
     display: flex;
@@ -64,12 +64,12 @@ h1 {
     padding: 12px 32px;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: white;
+    color: #4f46e5;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
     overflow: hidden;
@@ -83,7 +83,7 @@ h1 {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(79, 70, 229, 0.15);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -95,7 +95,7 @@ h1 {
 
 #reverseBtn:hover, #shuffleBtn:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 #reverseBtn:active, #shuffleBtn:active {
@@ -103,12 +103,13 @@ h1 {
 }
 
 #reverseBtn.active {
-    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
-    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+    background: #10b981;
+    color: white;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
 }
 
 #reverseBtn.active:hover {
-    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.6);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
 }
 
 .card-container {
@@ -174,7 +175,7 @@ h1 {
 
 .card-back {
     transform: rotateY(180deg);
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
     color: white;
 }
 
@@ -182,7 +183,7 @@ h1 {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #667eea;
+    background: #4f46e5;
     color: white;
     padding: 5px 15px;
     border-radius: 15px;
@@ -280,17 +281,17 @@ h1 {
     border: none;
     border-radius: 25px;
     background: white;
-    color: #667eea;
+    color: #4f46e5;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     transition: all 0.2s;
 }
 
 .navigation button:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navigation button:disabled {
