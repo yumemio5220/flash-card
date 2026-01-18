@@ -12,7 +12,7 @@ const meaningDisplay = document.getElementById('meaningDisplay');
 const wordSmall = document.getElementById('wordSmall');
 const genreTag = document.getElementById('genreTag');
 const genreTagBack = document.getElementById('genreTagBack');
-const genreFilter = document.getElementById('genreFilter');
+const genreChips = document.getElementById('genreChips');
 const reverseBtn = document.getElementById('reverseBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const prevBtn = document.getElementById('prevBtn');
@@ -51,12 +51,11 @@ async function loadCards() {
             }
         }
 
-        populateGenreFilter();
+        populateGenreChips();
 
         // デフォルトで「家族」ジャンルを選択
         const defaultGenre = '家族';
-        genreFilter.value = defaultGenre;
-        currentCards = allCards.filter(card => card.genre === defaultGenre);
+        selectGenre(defaultGenre);
 
         displayCard();
 
@@ -77,15 +76,73 @@ async function loadCards() {
     }
 }
 
-// ジャンルフィルターの選択肢を作成
-function populateGenreFilter() {
+// ジャンルチップを作成
+function populateGenreChips() {
     const genres = [...new Set(allCards.map(card => card.genre))];
+
+    // 「全て」チップを追加
+    const allChip = document.createElement('button');
+    allChip.className = 'genre-chip';
+    allChip.textContent = '全て';
+    allChip.dataset.genre = 'all';
+    allChip.addEventListener('click', () => selectGenre('all'));
+    genreChips.appendChild(allChip);
+
+    // 各ジャンルのチップを追加
     genres.forEach(genre => {
-        const option = document.createElement('option');
-        option.value = genre;
-        option.textContent = genre;
-        genreFilter.appendChild(option);
+        const chip = document.createElement('button');
+        chip.className = 'genre-chip';
+        chip.textContent = genre;
+        chip.dataset.genre = genre;
+        chip.addEventListener('click', () => selectGenre(genre));
+        genreChips.appendChild(chip);
     });
+
+    // スクロール位置に応じてグラデーションを更新
+    updateScrollGradient();
+    genreChips.addEventListener('scroll', updateScrollGradient);
+}
+
+// スクロール位置に応じてグラデーションを更新
+function updateScrollGradient() {
+    const scrollLeft = genreChips.scrollLeft;
+    const scrollWidth = genreChips.scrollWidth;
+    const clientWidth = genreChips.clientWidth;
+    const maxScroll = scrollWidth - clientWidth;
+
+    // スクロール位置に応じてクラスを切り替え
+    genreChips.classList.remove('scroll-start', 'scroll-middle', 'scroll-end');
+
+    if (maxScroll <= 0) {
+        // スクロールが不要な場合（すべて表示されている）
+        return;
+    } else if (scrollLeft <= 5) {
+        // 左端
+        genreChips.classList.add('scroll-start');
+    } else if (scrollLeft >= maxScroll - 5) {
+        // 右端
+        genreChips.classList.add('scroll-end');
+    } else {
+        // 中間
+        genreChips.classList.add('scroll-middle');
+    }
+}
+
+// ジャンルを選択
+function selectGenre(genre) {
+    // すべてのチップから active クラスを削除
+    document.querySelectorAll('.genre-chip').forEach(chip => {
+        chip.classList.remove('active');
+    });
+
+    // 選択されたチップに active クラスを追加
+    const selectedChip = document.querySelector(`[data-genre="${genre}"]`);
+    if (selectedChip) {
+        selectedChip.classList.add('active');
+    }
+
+    // カードをフィルタリング
+    filterByGenre(genre);
 }
 
 // カードの内容を更新
@@ -261,10 +318,6 @@ reverseBtn.addEventListener('click', () => {
 
 shuffleBtn.addEventListener('click', shuffleCards);
 
-genreFilter.addEventListener('change', (e) => {
-    filterByGenre(e.target.value);
-});
-
 // キーボード操作
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft' && currentIndex > 0 && !isAnimating) {
@@ -280,8 +333,12 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// iOSのスクロールを防止
+// iOSのスクロールを防止（ただしジャンルチップエリアは除外）
 document.body.addEventListener('touchmove', (e) => {
+    // ジャンルチップエリア内のタッチは許可
+    if (e.target.closest('.genre-chips')) {
+        return;
+    }
     e.preventDefault();
 }, { passive: false });
 

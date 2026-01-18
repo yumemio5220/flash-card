@@ -40,24 +40,72 @@ h1 {
 
 .controls {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-#genreFilter {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    background: white;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+.genre-chips {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 5px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    position: relative;
 }
 
-#genreFilter:hover {
+.genre-chips.scroll-start {
+    mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
+}
+
+.genre-chips.scroll-middle {
+    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+}
+
+.genre-chips.scroll-end {
+    mask-image: linear-gradient(to right, transparent, black 20px);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20px);
+}
+
+.genre-chips::-webkit-scrollbar {
+    display: none;
+}
+
+.genre-chip {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #4f46e5;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genre-chip:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.genre-chip.active {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.5);
+    transform: scale(1.05);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 #reverseBtn, #shuffleBtn {
@@ -355,19 +403,22 @@ h1 {
     }
 
     .controls {
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 12px;
+        margin-bottom: 15px;
     }
 
-    #genreFilter {
-        width: 100%;
-        padding: 12px 20px;
+    .genre-chips {
+        padding: 8px 3px;
+        gap: 8px;
     }
 
-    .controls > div {
-        display: flex;
-        gap: 10px;
+    .genre-chip {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .action-buttons {
+        gap: 8px;
     }
 
     #reverseBtn, #shuffleBtn {
