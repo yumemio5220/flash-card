@@ -69,47 +69,36 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 0.3em 0 #3730a3;
+    transition: all 0.1s;
     position: relative;
     overflow: hidden;
 }
 
-#reverseBtn::before, #shuffleBtn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(79, 70, 229, 0.15);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-}
-
-#reverseBtn:hover::before, #shuffleBtn:hover::before {
-    width: 300px;
-    height: 300px;
-}
-
 #reverseBtn:hover, #shuffleBtn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.4em 0 #3730a3;
 }
 
 #reverseBtn:active, #shuffleBtn:active {
-    transform: translateY(-1px) scale(0.98);
+    transform: translateY(0.2em);
+    box-shadow: 0 0.1em 0 #3730a3;
 }
 
 #reverseBtn.active {
     background: #10b981;
     color: white;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0.3em 0 #047857;
 }
 
 #reverseBtn.active:hover {
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.4em 0 #047857;
+}
+
+#reverseBtn.active:active {
+    transform: translateY(0.2em);
+    box-shadow: 0 0.1em 0 #047857;
 }
 
 .card-container {
@@ -124,6 +113,11 @@ h1 {
     transform: translateX(0);
     opacity: 1;
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
 }
 
 .card.slide-left {
@@ -285,13 +279,18 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    transition: all 0.2s;
+    box-shadow: 0 0.3em 0 #3730a3;
+    transition: all 0.1s;
 }
 
 .navigation button:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.4em 0 #3730a3;
+}
+
+.navigation button:active:not(:disabled) {
+    transform: translateY(0.2em);
+    box-shadow: 0 0.1em 0 #3730a3;
 }
 
 .navigation button:disabled {
