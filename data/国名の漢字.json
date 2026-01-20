@@ -1,0 +1,252 @@
+[
+  {
+    "word": "米",
+    "reading": "べい",
+    "meaning": "アメリカ"
+  },
+  {
+    "word": "英",
+    "reading": "えい",
+    "meaning": "イギリス"
+  },
+  {
+    "word": "仏",
+    "reading": "ふつ",
+    "meaning": "フランス"
+  },
+  {
+    "word": "独",
+    "reading": "どく",
+    "meaning": "ドイツ"
+  },
+  {
+    "word": "伊",
+    "reading": "い",
+    "meaning": "イタリア"
+  },
+  {
+    "word": "露",
+    "reading": "ろ",
+    "meaning": "ロシア"
+  },
+  {
+    "word": "中",
+    "reading": "ちゅう",
+    "meaning": "中国"
+  },
+  {
+    "word": "韓",
+    "reading": "かん",
+    "meaning": "韓国"
+  },
+  {
+    "word": "印",
+    "reading": "いん",
+    "meaning": "インド"
+  },
+  {
+    "word": "豪",
+    "reading": "ごう",
+    "meaning": "オーストラリア"
+  },
+  {
+    "word": "加",
+    "reading": "か",
+    "meaning": "カナダ"
+  },
+  {
+    "word": "西",
+    "reading": "せい",
+    "meaning": "スペイン"
+  },
+  {
+    "word": "葡",
+    "reading": "ぽ",
+    "meaning": "ポルトガル"
+  },
+  {
+    "word": "蘭",
+    "reading": "らん",
+    "meaning": "オランダ"
+  },
+  {
+    "word": "瑞",
+    "reading": "すい",
+    "meaning": "スイス"
+  },
+  {
+    "word": "墺",
+    "reading": "おう",
+    "meaning": "オーストリア"
+  },
+  {
+    "word": "希",
+    "reading": "き",
+    "meaning": "ギリシャ"
+  },
+  {
+    "word": "土",
+    "reading": "と",
+    "meaning": "トルコ"
+  },
+  {
+    "word": "泰",
+    "reading": "たい",
+    "meaning": "タイ"
+  },
+  {
+    "word": "越",
+    "reading": "えつ",
+    "meaning": "ベトナム"
+  },
+  {
+    "word": "比",
+    "reading": "ひ",
+    "meaning": "フィリピン"
+  },
+  {
+    "word": "新",
+    "reading": "しん",
+    "meaning": "シンガポール"
+  },
+  {
+    "word": "馬",
+    "reading": "ば",
+    "meaning": "マレーシア"
+  },
+  {
+    "word": "尼",
+    "reading": "に",
+    "meaning": "インドネシア"
+  },
+  {
+    "word": "埃",
+    "reading": "あい",
+    "meaning": "エジプト"
+  },
+  {
+    "word": "波",
+    "reading": "は",
+    "meaning": "ポーランド"
+  },
+  {
+    "word": "諾",
+    "reading": "のる",
+    "meaning": "ノルウェー"
+  },
+  {
+    "word": "典",
+    "reading": "てん",
+    "meaning": "スウェーデン"
+  },
+  {
+    "word": "丁",
+    "reading": "てい",
+    "meaning": "デンマーク"
+  },
+  {
+    "word": "芬",
+    "reading": "ふぃん",
+    "meaning": "フィンランド"
+  },
+  {
+    "word": "白",
+    "reading": "はく",
+    "meaning": "ベルギー"
+  },
+  {
+    "word": "墨",
+    "reading": "ぼく",
+    "meaning": "メキシコ"
+  },
+  {
+    "word": "伯",
+    "reading": "ぶら",
+    "meaning": "ブラジル"
+  },
+  {
+    "word": "亜",
+    "reading": "あ",
+    "meaning": "アルゼンチン"
+  },
+  {
+    "word": "智",
+    "reading": "ち",
+    "meaning": "チリ"
+  },
+  {
+    "word": "秘",
+    "reading": "ぺ",
+    "meaning": "ペルー"
+  },
+  {
+    "word": "南阿",
+    "reading": "なんあ",
+    "meaning": "南アフリカ"
+  },
+  {
+    "word": "星",
+    "reading": "せい",
+    "meaning": "シンガポール（別表記）"
+  },
+  {
+    "word": "緬",
+    "reading": "めん",
+    "meaning": "ミャンマー"
+  },
+  {
+    "word": "柬",
+    "reading": "かん",
+    "meaning": "カンボジア"
+  },
+  {
+    "word": "挪",
+    "reading": "だ",
+    "meaning": "ノルウェー（別表記）"
+  },
+  {
+    "word": "瑞典",
+    "reading": "すいてん",
+    "meaning": "スウェーデン（別表記）"
+  },
+  {
+    "word": "愛蘭",
+    "reading": "あいらん",
+    "meaning": "アイルランド"
+  },
+  {
+    "word": "新西蘭",
+    "reading": "にゅーじーらんど",
+    "meaning": "ニュージーランド"
+  },
+  {
+    "word": "以色列",
+    "reading": "いすらえる",
+    "meaning": "イスラエル"
+  },
+  {
+    "word": "沙特",
+    "reading": "さうじ",
+    "meaning": "サウジアラビア"
+  },
+  {
+    "word": "烏克蘭",
+    "reading": "うくらいな",
+    "meaning": "ウクライナ"
+  },
+  {
+    "word": "洪牙利",
+    "reading": "はんがりー",
+    "meaning": "ハンガリー"
+  },
+  {
+    "word": "捷克",
+    "reading": "ちぇこ",
+    "meaning": "チェコ"
+  },
+  {
+    "word": "羅馬尼亜",
+    "reading": "るーまにあ",
+    "meaning": "ルーマニア"
+  }
+]
