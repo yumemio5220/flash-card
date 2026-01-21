@@ -1,0 +1,414 @@
+[
+  {
+    "word": "H",
+    "meaning": "水素"
+  },
+  {
+    "word": "He",
+    "meaning": "ヘリウム"
+  },
+  {
+    "word": "Li",
+    "meaning": "リチウム"
+  },
+  {
+    "word": "Be",
+    "meaning": "ベリリウム"
+  },
+  {
+    "word": "B",
+    "meaning": "ホウ素"
+  },
+  {
+    "word": "C",
+    "meaning": "炭素"
+  },
+  {
+    "word": "N",
+    "meaning": "窒素"
+  },
+  {
+    "word": "O",
+    "meaning": "酸素"
+  },
+  {
+    "word": "F",
+    "meaning": "フッ素"
+  },
+  {
+    "word": "Ne",
+    "meaning": "ネオン"
+  },
+  {
+    "word": "Na",
+    "meaning": "ナトリウム"
+  },
+  {
+    "word": "Mg",
+    "meaning": "マグネシウム"
+  },
+  {
+    "word": "Al",
+    "meaning": "アルミニウム"
+  },
+  {
+    "word": "Si",
+    "meaning": "ケイ素"
+  },
+  {
+    "word": "P",
+    "meaning": "リン"
+  },
+  {
+    "word": "S",
+    "meaning": "硫黄"
+  },
+  {
+    "word": "Cl",
+    "meaning": "塩素"
+  },
+  {
+    "word": "Ar",
+    "meaning": "アルゴン"
+  },
+  {
+    "word": "K",
+    "meaning": "カリウム"
+  },
+  {
+    "word": "Ca",
+    "meaning": "カルシウム"
+  },
+  {
+    "word": "Sc",
+    "meaning": "スカンジウム"
+  },
+  {
+    "word": "Ti",
+    "meaning": "チタン"
+  },
+  {
+    "word": "V",
+    "meaning": "バナジウム"
+  },
+  {
+    "word": "Cr",
+    "meaning": "クロム"
+  },
+  {
+    "word": "Mn",
+    "meaning": "マンガン"
+  },
+  {
+    "word": "Fe",
+    "meaning": "鉄"
+  },
+  {
+    "word": "Co",
+    "meaning": "コバルト"
+  },
+  {
+    "word": "Ni",
+    "meaning": "ニッケル"
+  },
+  {
+    "word": "Cu",
+    "meaning": "銅"
+  },
+  {
+    "word": "Zn",
+    "meaning": "亜鉛"
+  },
+  {
+    "word": "Ga",
+    "meaning": "ガリウム"
+  },
+  {
+    "word": "Ge",
+    "meaning": "ゲルマニウム"
+  },
+  {
+    "word": "As",
+    "meaning": "ヒ素"
+  },
+  {
+    "word": "Se",
+    "meaning": "セレン"
+  },
+  {
+    "word": "Br",
+    "meaning": "臭素"
+  },
+  {
+    "word": "Kr",
+    "meaning": "クリプトン"
+  },
+  {
+    "word": "Rb",
+    "meaning": "ルビジウム"
+  },
+  {
+    "word": "Sr",
+    "meaning": "ストロンチウム"
+  },
+  {
+    "word": "Y",
+    "meaning": "イットリウム"
+  },
+  {
+    "word": "Zr",
+    "meaning": "ジルコニウム"
+  },
+  {
+    "word": "Nb",
+    "meaning": "ニオブ"
+  },
+  {
+    "word": "Mo",
+    "meaning": "モリブデン"
+  },
+  {
+    "word": "Tc",
+    "meaning": "テクネチウム"
+  },
+  {
+    "word": "Ru",
+    "meaning": "ルテニウム"
+  },
+  {
+    "word": "Rh",
+    "meaning": "ロジウム"
+  },
+  {
+    "word": "Pd",
+    "meaning": "パラジウム"
+  },
+  {
+    "word": "Ag",
+    "meaning": "銀"
+  },
+  {
+    "word": "Cd",
+    "meaning": "カドミウム"
+  },
+  {
+    "word": "In",
+    "meaning": "インジウム"
+  },
+  {
+    "word": "Sn",
+    "meaning": "スズ"
+  },
+  {
+    "word": "Sb",
+    "meaning": "アンチモン"
+  },
+  {
+    "word": "Te",
+    "meaning": "テルル"
+  },
+  {
+    "word": "I",
+    "meaning": "ヨウ素"
+  },
+  {
+    "word": "Xe",
+    "meaning": "キセノン"
+  },
+  {
+    "word": "Cs",
+    "meaning": "セシウム"
+  },
+  {
+    "word": "Ba",
+    "meaning": "バリウム"
+  },
+  {
+    "word": "La",
+    "meaning": "ランタン"
+  },
+  {
+    "word": "Ce",
+    "meaning": "セリウム"
+  },
+  {
+    "word": "Pr",
+    "meaning": "プラセオジム"
+  },
+  {
+    "word": "Nd",
+    "meaning": "ネオジム"
+  },
+  {
+    "word": "Pm",
+    "meaning": "プロメチウム"
+  },
+  {
+    "word": "Sm",
+    "meaning": "サマリウム"
+  },
+  {
+    "word": "Eu",
+    "meaning": "ユウロピウム"
+  },
+  {
+    "word": "Gd",
+    "meaning": "ガドリニウム"
+  },
+  {
+    "word": "Tb",
+    "meaning": "テルビウム"
+  },
+  {
+    "word": "Dy",
+    "meaning": "ジスプロシウム"
+  },
+  {
+    "word": "Ho",
+    "meaning": "ホルミウム"
+  },
+  {
+    "word": "Er",
+    "meaning": "エルビウム"
+  },
+  {
+    "word": "Tm",
+    "meaning": "ツリウム"
+  },
+  {
+    "word": "Yb",
+    "meaning": "イッテルビウム"
+  },
+  {
+    "word": "Lu",
+    "meaning": "ルテチウム"
+  },
+  {
+    "word": "Hf",
+    "meaning": "ハフニウム"
+  },
+  {
+    "word": "Ta",
+    "meaning": "タンタル"
+  },
+  {
+    "word": "W",
+    "meaning": "タングステン"
+  },
+  {
+    "word": "Re",
+    "meaning": "レニウム"
+  },
+  {
+    "word": "Os",
+    "meaning": "オスミウム"
+  },
+  {
+    "word": "Ir",
+    "meaning": "イリジウム"
+  },
+  {
+    "word": "Pt",
+    "meaning": "白金"
+  },
+  {
+    "word": "Au",
+    "meaning": "金"
+  },
+  {
+    "word": "Hg",
+    "meaning": "水銀"
+  },
+  {
+    "word": "Tl",
+    "meaning": "タリウム"
+  },
+  {
+    "word": "Pb",
+    "meaning": "鉛"
+  },
+  {
+    "word": "Bi",
+    "meaning": "ビスマス"
+  },
+  {
+    "word": "Po",
+    "meaning": "ポロニウム"
+  },
+  {
+    "word": "At",
+    "meaning": "アスタチン"
+  },
+  {
+    "word": "Rn",
+    "meaning": "ラドン"
+  },
+  {
+    "word": "Fr",
+    "meaning": "フランシウム"
+  },
+  {
+    "word": "Ra",
+    "meaning": "ラジウム"
+  },
+  {
+    "word": "Ac",
+    "meaning": "アクチニウム"
+  },
+  {
+    "word": "Th",
+    "meaning": "トリウム"
+  },
+  {
+    "word": "Pa",
+    "meaning": "プロトアクチニウム"
+  },
+  {
+    "word": "U",
+    "meaning": "ウラン"
+  },
+  {
+    "word": "Np",
+    "meaning": "ネプツニウム"
+  },
+  {
+    "word": "Pu",
+    "meaning": "プルトニウム"
+  },
+  {
+    "word": "Am",
+    "meaning": "アメリシウム"
+  },
+  {
+    "word": "Cm",
+    "meaning": "キュリウム"
+  },
+  {
+    "word": "Bk",
+    "meaning": "バークリウム"
+  },
+  {
+    "word": "Cf",
+    "meaning": "カリホルニウム"
+  },
+  {
+    "word": "Es",
+    "meaning": "アインスタイニウム"
+  },
+  {
+    "word": "Fm",
+    "meaning": "フェルミウム"
+  },
+  {
+    "word": "Md",
+    "meaning": "メンデレビウム"
+  },
+  {
+    "word": "No",
+    "meaning": "ノーベリウム"
+  },
+  {
+    "word": "Lr",
+    "meaning": "ローレンシウム"
+  }
+]
