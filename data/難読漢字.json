@@ -1,0 +1,302 @@
+[
+  {
+    "word": "薔薇",
+    "reading": "ばら",
+    "meaning": "バラの花"
+  },
+  {
+    "word": "蒲公英",
+    "reading": "たんぽぽ",
+    "meaning": "春に黄色い花を咲かせる野草"
+  },
+  {
+    "word": "向日葵",
+    "reading": "ひまわり",
+    "meaning": "夏に大きな黄色い花を咲かせる植物"
+  },
+  {
+    "word": "紫陽花",
+    "reading": "あじさい",
+    "meaning": "梅雨時に咲く花"
+  },
+  {
+    "word": "躑躅",
+    "reading": "つつじ",
+    "meaning": "春に咲く花木"
+  },
+  {
+    "word": "林檎",
+    "reading": "りんご",
+    "meaning": "赤い果物"
+  },
+  {
+    "word": "葡萄",
+    "reading": "ぶどう",
+    "meaning": "房状になる果物"
+  },
+  {
+    "word": "檸檬",
+    "reading": "れもん",
+    "meaning": "酸っぱい柑橘類"
+  },
+  {
+    "word": "蜜柑",
+    "reading": "みかん",
+    "meaning": "冬の代表的な柑橘類"
+  },
+  {
+    "word": "西瓜",
+    "reading": "すいか",
+    "meaning": "夏の果物"
+  },
+  {
+    "word": "南瓜",
+    "reading": "かぼちゃ",
+    "meaning": "ハロウィンでおなじみの野菜"
+  },
+  {
+    "word": "胡瓜",
+    "reading": "きゅうり",
+    "meaning": "緑色の細長い野菜"
+  },
+  {
+    "word": "玉蜀黍",
+    "reading": "とうもろこし",
+    "meaning": "黄色い粒が並ぶ穀物"
+  },
+  {
+    "word": "蒟蒻",
+    "reading": "こんにゃく",
+    "meaning": "おでんの具材"
+  },
+  {
+    "word": "牛蒡",
+    "reading": "ごぼう",
+    "meaning": "根菜の一種"
+  },
+  {
+    "word": "海豚",
+    "reading": "いるか",
+    "meaning": "知能が高い海の哺乳類"
+  },
+  {
+    "word": "河豚",
+    "reading": "ふぐ",
+    "meaning": "毒を持つ高級魚"
+  },
+  {
+    "word": "海月",
+    "reading": "くらげ",
+    "meaning": "透明な海の生き物"
+  },
+  {
+    "word": "海星",
+    "reading": "ひとで",
+    "meaning": "星形の海の生き物"
+  },
+  {
+    "word": "烏賊",
+    "reading": "いか",
+    "meaning": "10本の足を持つ軟体動物"
+  },
+  {
+    "word": "蛸",
+    "reading": "たこ",
+    "meaning": "8本の足を持つ軟体動物"
+  },
+  {
+    "word": "海老",
+    "reading": "えび",
+    "meaning": "甲殻類の一種"
+  },
+  {
+    "word": "蟹",
+    "reading": "かに",
+    "meaning": "横歩きする甲殻類"
+  },
+  {
+    "word": "蜻蛉",
+    "reading": "とんぼ",
+    "meaning": "秋の昆虫"
+  },
+  {
+    "word": "蝶々",
+    "reading": "ちょうちょう",
+    "meaning": "美しい羽を持つ昆虫"
+  },
+  {
+    "word": "蟋蟀",
+    "reading": "こおろぎ",
+    "meaning": "秋に鳴く虫"
+  },
+  {
+    "word": "蝸牛",
+    "reading": "かたつむり",
+    "meaning": "殻を背負った軟体動物"
+  },
+  {
+    "word": "蜥蜴",
+    "reading": "とかげ",
+    "meaning": "尻尾を切って逃げる爬虫類"
+  },
+  {
+    "word": "百足",
+    "reading": "むかで",
+    "meaning": "たくさんの足を持つ虫"
+  },
+  {
+    "word": "土竜",
+    "reading": "もぐら",
+    "meaning": "地中で生活する哺乳類"
+  },
+  {
+    "word": "翡翠",
+    "reading": "かわせみ",
+    "meaning": "美しい青い羽を持つ鳥"
+  },
+  {
+    "word": "雲雀",
+    "reading": "ひばり",
+    "meaning": "空高く飛んでさえずる鳥"
+  },
+  {
+    "word": "百舌鳥",
+    "reading": "もず",
+    "meaning": "はやにえで知られる鳥"
+  },
+  {
+    "word": "啄木鳥",
+    "reading": "きつつき",
+    "meaning": "木をつつく鳥"
+  },
+  {
+    "word": "鸚鵡",
+    "reading": "おうむ",
+    "meaning": "言葉を真似る鳥"
+  },
+  {
+    "word": "梟",
+    "reading": "ふくろう",
+    "meaning": "夜行性の猛禽類"
+  },
+  {
+    "word": "躊躇",
+    "reading": "ちゅうちょ",
+    "meaning": "ためらうこと"
+  },
+  {
+    "word": "憂鬱",
+    "reading": "ゆううつ",
+    "meaning": "気分が沈むこと"
+  },
+  {
+    "word": "顰蹙",
+    "reading": "ひんしゅく",
+    "meaning": "眉をひそめること"
+  },
+  {
+    "word": "贔屓",
+    "reading": "ひいき",
+    "meaning": "特別に目をかけること"
+  },
+  {
+    "word": "齟齬",
+    "reading": "そご",
+    "meaning": "食い違いが生じること"
+  },
+  {
+    "word": "邂逅",
+    "reading": "かいこう",
+    "meaning": "偶然の出会い"
+  },
+  {
+    "word": "慟哭",
+    "reading": "どうこく",
+    "meaning": "声を上げて泣くこと"
+  },
+  {
+    "word": "畢竟",
+    "reading": "ひっきょう",
+    "meaning": "結局のところ"
+  },
+  {
+    "word": "黄昏",
+    "reading": "たそがれ",
+    "meaning": "日没後の薄暗い時間帯"
+  },
+  {
+    "word": "五月雨",
+    "reading": "さみだれ",
+    "meaning": "梅雨の時期に降る雨"
+  },
+  {
+    "word": "時雨",
+    "reading": "しぐれ",
+    "meaning": "晩秋から初冬にかけての通り雨"
+  },
+  {
+    "word": "霙",
+    "reading": "みぞれ",
+    "meaning": "雨と雪が混じったもの"
+  },
+  {
+    "word": "霰",
+    "reading": "あられ",
+    "meaning": "小さな氷の粒"
+  },
+  {
+    "word": "雹",
+    "reading": "ひょう",
+    "meaning": "大きな氷の粒"
+  },
+  {
+    "word": "東雲",
+    "reading": "しののめ",
+    "meaning": "夜明け前の空"
+  },
+  {
+    "word": "木漏れ日",
+    "reading": "こもれび",
+    "meaning": "木々の間から差し込む日光"
+  },
+  {
+    "word": "陽炎",
+    "reading": "かげろう",
+    "meaning": "地面から立ち上る熱気で景色が揺らぐ現象"
+  },
+  {
+    "word": "蜃気楼",
+    "reading": "しんきろう",
+    "meaning": "光の屈折による幻の景色"
+  },
+  {
+    "word": "心太",
+    "reading": "ところてん",
+    "meaning": "天草から作る涼味"
+  },
+  {
+    "word": "御御御付",
+    "reading": "おみおつけ",
+    "meaning": "味噌汁の丁寧な呼び方"
+  },
+  {
+    "word": "案山子",
+    "reading": "かかし",
+    "meaning": "田畑で鳥を追い払う人形"
+  },
+  {
+    "word": "七夕",
+    "reading": "たなばた",
+    "meaning": "7月7日の星祭り"
+  },
+  {
+    "word": "神楽",
+    "reading": "かぐら",
+    "meaning": "神に奉納する舞楽"
+  },
+  {
+    "word": "相撲",
+    "reading": "すもう",
+    "meaning": "日本の国技"
+  }
+]
