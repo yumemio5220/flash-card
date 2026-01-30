@@ -298,5 +298,540 @@
     "word": "相撲",
     "reading": "すもう",
     "meaning": "日本の国技"
+  },
+  {
+    "word": "山茶花",
+    "reading": "さざんか",
+    "meaning": "冬に咲く花木"
+  },
+  {
+    "word": "鈴蘭",
+    "reading": "すずらん",
+    "meaning": "白い鈴のような花"
+  },
+  {
+    "word": "桔梗",
+    "reading": "ききょう",
+    "meaning": "秋の七草の一つ"
+  },
+  {
+    "word": "撫子",
+    "reading": "なでしこ",
+    "meaning": "秋の七草の一つ、可憐な花"
+  },
+  {
+    "word": "木天蓼",
+    "reading": "またたび",
+    "meaning": "猫が好む植物"
+  },
+  {
+    "word": "独活",
+    "reading": "うど",
+    "meaning": "春の山菜"
+  },
+  {
+    "word": "韮",
+    "reading": "にら",
+    "meaning": "強い匂いのある野菜"
+  },
+  {
+    "word": "胡麻",
+    "reading": "ごま",
+    "meaning": "小さな油性の種子"
+  },
+  {
+    "word": "蕎麦",
+    "reading": "そば",
+    "meaning": "そば粉で作る麺"
+  },
+  {
+    "word": "豌豆",
+    "reading": "えんどう",
+    "meaning": "グリーンピースの原料"
+  },
+  {
+    "word": "馬鈴薯",
+    "reading": "ばれいしょ",
+    "meaning": "じゃがいもの別名"
+  },
+  {
+    "word": "甘藷",
+    "reading": "かんしょ",
+    "meaning": "さつまいもの別名"
+  },
+  {
+    "word": "大蒜",
+    "reading": "にんにく",
+    "meaning": "強い匂いの香辛料"
+  },
+  {
+    "word": "生姜",
+    "reading": "しょうが",
+    "meaning": "辛味のある香辛料"
+  },
+  {
+    "word": "山葵",
+    "reading": "わさび",
+    "meaning": "刺激的な辛味の香辛料"
+  },
+  {
+    "word": "茗荷",
+    "reading": "みょうが",
+    "meaning": "薬味として使われる野菜"
+  },
+  {
+    "word": "椎茸",
+    "reading": "しいたけ",
+    "meaning": "代表的なきのこ"
+  },
+  {
+    "word": "占地",
+    "reading": "しめじ",
+    "meaning": "香りの良いきのこ"
+  },
+  {
+    "word": "松茸",
+    "reading": "まつたけ",
+    "meaning": "高級きのこ"
+  },
+  {
+    "word": "海苔",
+    "reading": "のり",
+    "meaning": "海藻を乾燥させた食品"
+  },
+  {
+    "word": "若布",
+    "reading": "わかめ",
+    "meaning": "味噌汁に入れる海藻"
+  },
+  {
+    "word": "昆布",
+    "reading": "こんぶ",
+    "meaning": "出汁をとる海藻"
+  },
+  {
+    "word": "海胆",
+    "reading": "うに",
+    "meaning": "トゲのある高級海産物"
+  },
+  {
+    "word": "栄螺",
+    "reading": "さざえ",
+    "meaning": "巻き貝の一種"
+  },
+  {
+    "word": "鮑",
+    "reading": "あわび",
+    "meaning": "高級な巻き貝"
+  },
+  {
+    "word": "蜆",
+    "reading": "しじみ",
+    "meaning": "小さな二枚貝"
+  },
+  {
+    "word": "浅蜊",
+    "reading": "あさり",
+    "meaning": "味噌汁の具材になる貝"
+  },
+  {
+    "word": "帆立貝",
+    "reading": "ほたてがい",
+    "meaning": "大きな二枚貝"
+  },
+  {
+    "word": "鯖",
+    "reading": "さば",
+    "meaning": "青魚の代表"
+  },
+  {
+    "word": "鰯",
+    "reading": "いわし",
+    "meaning": "小さな青魚"
+  },
+  {
+    "word": "鰺",
+    "reading": "あじ",
+    "meaning": "干物でおなじみの魚"
+  },
+  {
+    "word": "鰹",
+    "reading": "かつお",
+    "meaning": "鰹節の原料"
+  },
+  {
+    "word": "鮪",
+    "reading": "まぐろ",
+    "meaning": "トロが美味しい大型魚"
+  },
+  {
+    "word": "鮭",
+    "reading": "さけ",
+    "meaning": "ピンク色の身の魚"
+  },
+  {
+    "word": "鱒",
+    "reading": "ます",
+    "meaning": "鮭に似た魚"
+  },
+  {
+    "word": "鰤",
+    "reading": "ぶり",
+    "meaning": "出世魚の最終形"
+  },
+  {
+    "word": "鯛",
+    "reading": "たい",
+    "meaning": "めでたい魚"
+  },
+  {
+    "word": "鮃",
+    "reading": "ひらめ",
+    "meaning": "左ヒラメの平たい魚"
+  },
+  {
+    "word": "鰈",
+    "reading": "かれい",
+    "meaning": "右カレイの平たい魚"
+  },
+  {
+    "word": "鰻",
+    "reading": "うなぎ",
+    "meaning": "蒲焼きで有名な魚"
+  },
+  {
+    "word": "鮎",
+    "reading": "あゆ",
+    "meaning": "清流に住む魚"
+  },
+  {
+    "word": "虱",
+    "reading": "しらみ",
+    "meaning": "頭髪に寄生する虫"
+  },
+  {
+    "word": "蚤",
+    "reading": "のみ",
+    "meaning": "飛び跳ねる小さな虫"
+  },
+  {
+    "word": "蚊",
+    "reading": "か",
+    "meaning": "血を吸う虫"
+  },
+  {
+    "word": "蝉",
+    "reading": "せみ",
+    "meaning": "夏に鳴く虫"
+  },
+  {
+    "word": "蛍",
+    "reading": "ほたる",
+    "meaning": "光る虫"
+  },
+  {
+    "word": "蟷螂",
+    "reading": "かまきり",
+    "meaning": "鎌を持つ昆虫"
+  },
+  {
+    "word": "飛蝗",
+    "reading": "ばった",
+    "meaning": "跳躍する昆虫"
+  },
+  {
+    "word": "蟋蟀",
+    "reading": "きりぎりす",
+    "meaning": "夏に鳴く虫"
+  },
+  {
+    "word": "蜘蛛",
+    "reading": "くも",
+    "meaning": "巣を張る生き物"
+  },
+  {
+    "word": "蠍",
+    "reading": "さそり",
+    "meaning": "毒針を持つ生き物"
+  },
+  {
+    "word": "蛙",
+    "reading": "かえる",
+    "meaning": "水辺に住む両生類"
+  },
+  {
+    "word": "蝮",
+    "reading": "まむし",
+    "meaning": "毒蛇の一種"
+  },
+  {
+    "word": "海驢",
+    "reading": "あしか",
+    "meaning": "ヒレで歩く海獣"
+  },
+  {
+    "word": "海豹",
+    "reading": "あざらし",
+    "meaning": "丸い体の海獣"
+  },
+  {
+    "word": "海象",
+    "reading": "せいうち",
+    "meaning": "牙を持つ海獣"
+  },
+  {
+    "word": "膃肭臍",
+    "reading": "おっとせい",
+    "meaning": "オットセイ"
+  },
+  {
+    "word": "海獺",
+    "reading": "らっこ",
+    "meaning": "貝を割る海獣"
+  },
+  {
+    "word": "駱駝",
+    "reading": "らくだ",
+    "meaning": "砂漠の生き物"
+  },
+  {
+    "word": "麒麟",
+    "reading": "きりん",
+    "meaning": "首の長い動物"
+  },
+  {
+    "word": "河馬",
+    "reading": "かば",
+    "meaning": "大きな口の動物"
+  },
+  {
+    "word": "海狸",
+    "reading": "びーばー",
+    "meaning": "ダムを作る動物"
+  },
+  {
+    "word": "栗鼠",
+    "reading": "りす",
+    "meaning": "木の実を集める小動物"
+  },
+  {
+    "word": "穴熊",
+    "reading": "あなぐま",
+    "meaning": "穴を掘る動物"
+  },
+  {
+    "word": "馴鹿",
+    "reading": "となかい",
+    "meaning": "サンタのそりを引く動物"
+  },
+  {
+    "word": "豪猪",
+    "reading": "やまあらし",
+    "meaning": "針を持つ動物"
+  },
+  {
+    "word": "信天翁",
+    "reading": "あほうどり",
+    "meaning": "大きな海鳥"
+  },
+  {
+    "word": "鴎",
+    "reading": "かもめ",
+    "meaning": "海辺の白い鳥"
+  },
+  {
+    "word": "燕",
+    "reading": "つばめ",
+    "meaning": "軒下に巣を作る鳥"
+  },
+  {
+    "word": "鶯",
+    "reading": "うぐいす",
+    "meaning": "春を告げる鳥"
+  },
+  {
+    "word": "鴉",
+    "reading": "からす",
+    "meaning": "黒い鳥"
+  },
+  {
+    "word": "鷹",
+    "reading": "たか",
+    "meaning": "猛禽類"
+  },
+  {
+    "word": "鷲",
+    "reading": "わし",
+    "meaning": "大型の猛禽類"
+  },
+  {
+    "word": "鳶",
+    "reading": "とび",
+    "meaning": "円を描いて飛ぶ鳥"
+  },
+  {
+    "word": "鶴",
+    "reading": "つる",
+    "meaning": "縁起の良い鳥"
+  },
+  {
+    "word": "鸛",
+    "reading": "こうのとり",
+    "meaning": "赤ちゃんを運ぶ鳥"
+  },
+  {
+    "word": "白鳥",
+    "reading": "はくちょう",
+    "meaning": "白く美しい水鳥"
+  },
+  {
+    "word": "鴨",
+    "reading": "かも",
+    "meaning": "水辺の鳥"
+  },
+  {
+    "word": "鸚哥",
+    "reading": "いんこ",
+    "meaning": "色鮮やかな鳥"
+  },
+  {
+    "word": "駝鳥",
+    "reading": "だちょう",
+    "meaning": "飛べない大きな鳥"
+  },
+  {
+    "word": "孔雀",
+    "reading": "くじゃく",
+    "meaning": "美しい羽を広げる鳥"
+  },
+  {
+    "word": "紅鶴",
+    "reading": "ふらみんご",
+    "meaning": "ピンクの鳥"
+  },
+  {
+    "word": "小豆",
+    "reading": "あずき",
+    "meaning": "あんこの原料"
+  },
+  {
+    "word": "秋刀魚",
+    "reading": "さんま",
+    "meaning": "秋の代表的な魚"
+  },
+  {
+    "word": "鰊",
+    "reading": "にしん",
+    "meaning": "数の子の親魚"
+  },
+  {
+    "word": "公魚",
+    "reading": "わかさぎ",
+    "meaning": "氷上釣りで有名な魚"
+  },
+  {
+    "word": "柳葉魚",
+    "reading": "ししゃも",
+    "meaning": "卵を持った小魚"
+  },
+  {
+    "word": "鯉",
+    "reading": "こい",
+    "meaning": "池にいる魚"
+  },
+  {
+    "word": "鮒",
+    "reading": "ふな",
+    "meaning": "フナ寿司で有名な魚"
+  },
+  {
+    "word": "泥鰌",
+    "reading": "どじょう",
+    "meaning": "田んぼにいる魚"
+  },
+  {
+    "word": "海鼠",
+    "reading": "なまこ",
+    "meaning": "海底にいる珍味"
+  },
+  {
+    "word": "雲丹",
+    "reading": "うに",
+    "meaning": "海胆の別表記"
+  },
+  {
+    "word": "数の子",
+    "reading": "かずのこ",
+    "meaning": "正月のおせち料理"
+  },
+  {
+    "word": "鱈",
+    "reading": "たら",
+    "meaning": "鍋料理に使う白身魚"
+  },
+  {
+    "word": "鰈",
+    "reading": "かれい",
+    "meaning": "平たい魚"
+  },
+  {
+    "word": "肝",
+    "reading": "きも",
+    "meaning": "内臓、度胸"
+  },
+  {
+    "word": "顎",
+    "reading": "あご",
+    "meaning": "口の下の部分"
+  },
+  {
+    "word": "踝",
+    "reading": "くるぶし",
+    "meaning": "足首の骨の出っ張り"
+  },
+  {
+    "word": "踵",
+    "reading": "かかと",
+    "meaning": "足の後ろ"
+  },
+  {
+    "word": "脛",
+    "reading": "すね",
+    "meaning": "膝から下の前側"
+  },
+  {
+    "word": "膝",
+    "reading": "ひざ",
+    "meaning": "足の曲がる部分"
+  },
+  {
+    "word": "臑",
+    "reading": "すね",
+    "meaning": "脛の別表記"
+  },
+  {
+    "word": "腋",
+    "reading": "わき",
+    "meaning": "腕の付け根"
+  },
+  {
+    "word": "踪",
+    "reading": "あしあと",
+    "meaning": "足跡"
+  },
+  {
+    "word": "拳",
+    "reading": "こぶし",
+    "meaning": "握った手"
+  },
+  {
+    "word": "掌",
+    "reading": "てのひら",
+    "meaning": "手の平"
+  },
+  {
+    "word": "拇指",
+    "reading": "おやゆび",
+    "meaning": "一番太い指"
   }
 ]
