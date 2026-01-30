@@ -1,0 +1,450 @@
+[
+  {
+    "word": "スマホ",
+    "meaning": "スマートフォン"
+  },
+  {
+    "word": "パソコン",
+    "meaning": "パーソナルコンピューター"
+  },
+  {
+    "word": "エアコン",
+    "meaning": "エアーコンディショナー"
+  },
+  {
+    "word": "コンビニ",
+    "meaning": "コンビニエンスストア"
+  },
+  {
+    "word": "ファミレス",
+    "meaning": "ファミリーレストラン"
+  },
+  {
+    "word": "カラオケ",
+    "meaning": "空オーケストラ"
+  },
+  {
+    "word": "リモコン",
+    "meaning": "リモートコントロール"
+  },
+  {
+    "word": "ワンセグ",
+    "meaning": "ワンセグメント放送"
+  },
+  {
+    "word": "セクハラ",
+    "meaning": "セクシャルハラスメント"
+  },
+  {
+    "word": "パワハラ",
+    "meaning": "パワーハラスメント"
+  },
+  {
+    "word": "育休",
+    "meaning": "育児休暇"
+  },
+  {
+    "word": "産休",
+    "meaning": "産前産後休暇"
+  },
+  {
+    "word": "就活",
+    "meaning": "就職活動"
+  },
+  {
+    "word": "婚活",
+    "meaning": "結婚活動"
+  },
+  {
+    "word": "妊活",
+    "meaning": "妊娠活動"
+  },
+  {
+    "word": "終活",
+    "meaning": "終末活動"
+  },
+  {
+    "word": "グランピング",
+    "meaning": "グラマラスキャンピング"
+  },
+  {
+    "word": "パリピ",
+    "meaning": "パーティーピープル"
+  },
+  {
+    "word": "コピペ",
+    "meaning": "コピー&ペースト"
+  },
+  {
+    "word": "ググる",
+    "meaning": "Googleで検索する"
+  },
+  {
+    "word": "ポチる",
+    "meaning": "ネット通販で購入する"
+  },
+  {
+    "word": "ディスる",
+    "meaning": "ディスリスペクト（軽蔑する）"
+  },
+  {
+    "word": "インスタ",
+    "meaning": "Instagram（インスタグラム）"
+  },
+  {
+    "word": "インフルエンサー",
+    "meaning": "influence（影響）を与える人"
+  },
+  {
+    "word": "サブスク",
+    "meaning": "サブスクリプション（定額制サービス）"
+  },
+  {
+    "word": "リスケ",
+    "meaning": "リスケジュール（予定の変更）"
+  },
+  {
+    "word": "アポ",
+    "meaning": "アポイントメント（約束）"
+  },
+  {
+    "word": "テレワーク",
+    "meaning": "テレコミューティング・ワーク（遠隔勤務）"
+  },
+  {
+    "word": "ドラクエ",
+    "meaning": "ドラゴンクエスト"
+  },
+  {
+    "word": "ポケモン",
+    "meaning": "ポケットモンスター"
+  },
+  {
+    "word": "デジカメ",
+    "meaning": "デジタルカメラ"
+  },
+  {
+    "word": "プロペラ",
+    "meaning": "プロペラー"
+  },
+  {
+    "word": "ボールペン",
+    "meaning": "ボールポイントペン"
+  },
+  {
+    "word": "シャーペン",
+    "meaning": "シャープペンシル"
+  },
+  {
+    "word": "ちな",
+    "meaning": "ちなみに"
+  },
+  {
+    "word": "バ先",
+    "meaning": "バイト先"
+  },
+  {
+    "word": "タイパ",
+    "meaning": "タイムパフォーマンス"
+  },
+  {
+    "word": "コスパ",
+    "meaning": "コストパフォーマンス"
+  },
+  {
+    "word": "リアコ",
+    "meaning": "リアルに恋してる"
+  },
+  {
+    "word": "フッ軽",
+    "meaning": "フットワークが軽い"
+  },
+  {
+    "word": "気にピ",
+    "meaning": "気になるピープル（人）"
+  },
+  {
+    "word": "きゃぱい",
+    "meaning": "キャパオーバー"
+  },
+  {
+    "word": "インライ",
+    "meaning": "インスタライブ"
+  },
+  {
+    "word": "メンブレ",
+    "meaning": "メンタルブレイク"
+  },
+  {
+    "word": "おしゃピク",
+    "meaning": "おしゃれなピクニック"
+  },
+  {
+    "word": "ワンチャン",
+    "meaning": "ワンチャンス"
+  },
+  {
+    "word": "あーね",
+    "meaning": "ああ、なるほどね"
+  },
+  {
+    "word": "それな",
+    "meaning": "それはそうだね"
+  },
+  {
+    "word": "り",
+    "meaning": "了解"
+  },
+  {
+    "word": "おけまる",
+    "meaning": "OK（オッケー）"
+  },
+  {
+    "word": "KY",
+    "meaning": "空気読めない"
+  },
+  {
+    "word": "JK",
+    "meaning": "女子高生"
+  },
+  {
+    "word": "JC",
+    "meaning": "女子中学生"
+  },
+  {
+    "word": "DK",
+    "meaning": "男子高校生"
+  },
+  {
+    "word": "激おこぷんぷん丸",
+    "meaning": "激しく怒っている"
+  },
+  {
+    "word": "マジ卍",
+    "meaning": "まじでやばい・すごい"
+  },
+  {
+    "word": "エモい",
+    "meaning": "エモーショナル（感情的・情緒的）"
+  },
+  {
+    "word": "尊い",
+    "meaning": "推しが素晴らしい"
+  },
+  {
+    "word": "推しメン",
+    "meaning": "推しているメンバー"
+  },
+  {
+    "word": "ガチ",
+    "meaning": "ガチンコ（本気）"
+  },
+  {
+    "word": "リア充",
+    "meaning": "リアル（現実）が充実している"
+  },
+  {
+    "word": "ぴえん",
+    "meaning": "泣いている様子"
+  },
+  {
+    "word": "ぱおん",
+    "meaning": "ぴえんより悲しい"
+  },
+  {
+    "word": "ばぶ",
+    "meaning": "赤ちゃん言葉・甘えたい気持ち"
+  },
+  {
+    "word": "NHK",
+    "meaning": "日本放送協会"
+  },
+  {
+    "word": "FBI",
+    "meaning": "連邦捜査局"
+  },
+  {
+    "word": "CIA",
+    "meaning": "中央情報局"
+  },
+  {
+    "word": "NASA",
+    "meaning": "アメリカ航空宇宙局"
+  },
+  {
+    "word": "WHO",
+    "meaning": "世界保健機関"
+  },
+  {
+    "word": "UNESCO",
+    "meaning": "国際連合教育科学文化機関"
+  },
+  {
+    "word": "UNICEF",
+    "meaning": "国際連合児童基金"
+  },
+  {
+    "word": "NGO",
+    "meaning": "非政府組織"
+  },
+  {
+    "word": "NPO",
+    "meaning": "非営利組織"
+  },
+  {
+    "word": "GDP",
+    "meaning": "国内総生産"
+  },
+  {
+    "word": "GNP",
+    "meaning": "国民総生産"
+  },
+  {
+    "word": "GPS",
+    "meaning": "全地球測位システム"
+  },
+  {
+    "word": "DNA",
+    "meaning": "デオキシリボ核酸"
+  },
+  {
+    "word": "RNA",
+    "meaning": "リボ核酸"
+  },
+  {
+    "word": "ATM",
+    "meaning": "現金自動預払機"
+  },
+  {
+    "word": "CD",
+    "meaning": "コンパクトディスク"
+  },
+  {
+    "word": "DVD",
+    "meaning": "デジタルバーサタイルディスク"
+  },
+  {
+    "word": "USB",
+    "meaning": "ユニバーサルシリアルバス"
+  },
+  {
+    "word": "Wi-Fi",
+    "meaning": "ワイヤレスフィデリティ"
+  },
+  {
+    "word": "AI",
+    "meaning": "人工知能"
+  },
+  {
+    "word": "VR",
+    "meaning": "仮想現実"
+  },
+  {
+    "word": "AR",
+    "meaning": "拡張現実"
+  },
+  {
+    "word": "SNS",
+    "meaning": "ソーシャルネットワーキングサービス"
+  },
+  {
+    "word": "DM",
+    "meaning": "ダイレクトメッセージ"
+  },
+  {
+    "word": "FAQ",
+    "meaning": "よくある質問"
+  },
+  {
+    "word": "PDF",
+    "meaning": "ポータブルドキュメントフォーマット"
+  },
+  {
+    "word": "URL",
+    "meaning": "統一資源位置指定子"
+  },
+  {
+    "word": "HTML",
+    "meaning": "ハイパーテキストマークアップ言語"
+  },
+  {
+    "word": "CEO",
+    "meaning": "最高経営責任者"
+  },
+  {
+    "word": "CFO",
+    "meaning": "最高財務責任者"
+  },
+  {
+    "word": "COO",
+    "meaning": "最高執行責任者"
+  },
+  {
+    "word": "CTO",
+    "meaning": "最高技術責任者"
+  },
+  {
+    "word": "ASAP",
+    "meaning": "できるだけ早く"
+  },
+  {
+    "word": "FYI",
+    "meaning": "ご参考まで"
+  },
+  {
+    "word": "DIY",
+    "meaning": "日曜大工・自分でやる"
+  },
+  {
+    "word": "DX",
+    "meaning": "デジタルトランスフォーメーション"
+  },
+  {
+    "word": "SDGs",
+    "meaning": "持続可能な開発目標"
+  },
+  {
+    "word": "LGBT",
+    "meaning": "性的マイノリティの総称"
+  },
+  {
+    "word": "PDCA",
+    "meaning": "計画・実行・評価・改善"
+  },
+  {
+    "word": "OJT",
+    "meaning": "職場内訓練"
+  },
+  {
+    "word": "M&A",
+    "meaning": "合併と買収"
+  },
+  {
+    "word": "B2B",
+    "meaning": "企業間取引"
+  },
+  {
+    "word": "B2C",
+    "meaning": "企業対消費者取引"
+  },
+  {
+    "word": "MVP",
+    "meaning": "最優秀選手・最小限の製品"
+  },
+  {
+    "word": "KPI",
+    "meaning": "重要業績評価指標"
+  },
+  {
+    "word": "ROI",
+    "meaning": "投資利益率"
+  },
+  {
+    "word": "BtoB",
+    "meaning": "企業間取引"
+  },
+  {
+    "word": "BtoC",
+    "meaning": "企業対消費者取引"
+  }
+]
