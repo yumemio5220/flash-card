@@ -12,7 +12,7 @@ const meaningDisplay = document.getElementById('meaningDisplay');
 const wordSmall = document.getElementById('wordSmall');
 const genreTag = document.getElementById('genreTag');
 const genreTagBack = document.getElementById('genreTagBack');
-const genreChips = document.getElementById('genreChips');
+const genreSelect = document.getElementById('genreSelect');
 const reverseBtn = document.getElementById('reverseBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const prevBtn = document.getElementById('prevBtn');
@@ -51,11 +51,19 @@ async function loadCards() {
             }
         }
 
-        populateGenreChips();
+        populateGenreSelect();
 
-        // デフォルトで「家族」ジャンルを選択
+        // デフォルトで「家族」ジャンルを選択（存在しない場合は「すべて」）
         const defaultGenre = '家族';
-        selectGenre(defaultGenre);
+        const hasDefaultGenre = Array.from(genreSelect.options).some(opt => opt.value === defaultGenre);
+
+        if (hasDefaultGenre) {
+            genreSelect.value = defaultGenre;
+            selectGenre(defaultGenre);
+        } else {
+            genreSelect.value = '';
+            selectGenre('');
+        }
 
         displayCard();
 
@@ -76,71 +84,26 @@ async function loadCards() {
     }
 }
 
-// ジャンルチップを作成
-function populateGenreChips() {
+// ジャンルセレクトボックスを作成
+function populateGenreSelect() {
     const genres = [...new Set(allCards.map(card => card.genre))];
 
-    // 「全て」チップを追加
-    const allChip = document.createElement('button');
-    allChip.className = 'genre-chip';
-    allChip.textContent = '全て';
-    allChip.dataset.genre = 'all';
-    allChip.addEventListener('click', () => selectGenre('all'));
-    genreChips.appendChild(allChip);
-
-    // 各ジャンルのチップを追加
-    genres.forEach(genre => {
-        const chip = document.createElement('button');
-        chip.className = 'genre-chip';
-        chip.textContent = genre;
-        chip.dataset.genre = genre;
-        chip.addEventListener('click', () => selectGenre(genre));
-        genreChips.appendChild(chip);
-    });
-
-    // スクロール位置に応じてグラデーションを更新
-    updateScrollGradient();
-    genreChips.addEventListener('scroll', updateScrollGradient);
-}
-
-// スクロール位置に応じてグラデーションを更新
-function updateScrollGradient() {
-    const scrollLeft = genreChips.scrollLeft;
-    const scrollWidth = genreChips.scrollWidth;
-    const clientWidth = genreChips.clientWidth;
-    const maxScroll = scrollWidth - clientWidth;
-
-    // スクロール位置に応じてクラスを切り替え
-    genreChips.classList.remove('scroll-start', 'scroll-middle', 'scroll-end');
-
-    if (maxScroll <= 0) {
-        // スクロールが不要な場合（すべて表示されている）
-        return;
-    } else if (scrollLeft <= 5) {
-        // 左端
-        genreChips.classList.add('scroll-start');
-    } else if (scrollLeft >= maxScroll - 5) {
-        // 右端
-        genreChips.classList.add('scroll-end');
-    } else {
-        // 中間
-        genreChips.classList.add('scroll-middle');
+    // 既存のオプションをクリア（「すべて」オプション以外）
+    while (genreSelect.options.length > 1) {
+        genreSelect.remove(1);
     }
+
+    // 各ジャンルのオプションを追加
+    genres.forEach(genre => {
+        const option = document.createElement('option');
+        option.value = genre;
+        option.textContent = genre;
+        genreSelect.appendChild(option);
+    });
 }
 
 // ジャンルを選択
 function selectGenre(genre) {
-    // すべてのチップから active クラスを削除
-    document.querySelectorAll('.genre-chip').forEach(chip => {
-        chip.classList.remove('active');
-    });
-
-    // 選択されたチップに active クラスを追加
-    const selectedChip = document.querySelector(`[data-genre="${genre}"]`);
-    if (selectedChip) {
-        selectedChip.classList.add('active');
-    }
-
     // カードをフィルタリング
     filterByGenre(genre);
 }
@@ -280,7 +243,7 @@ function shuffleCards() {
 
 // ジャンルでフィルタリング
 function filterByGenre(genre) {
-    if (genre === 'all') {
+    if (genre === '' || genre === 'all') {
         currentCards = [...allCards];
     } else {
         currentCards = allCards.filter(card => card.genre === genre);
@@ -288,6 +251,11 @@ function filterByGenre(genre) {
     currentIndex = 0;
     displayCard();
 }
+
+// セレクトボックスの変更イベント
+genreSelect.addEventListener('change', (e) => {
+    selectGenre(e.target.value);
+});
 
 // イベントリスナー
 flashcard.addEventListener('click', () => {
@@ -333,10 +301,10 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// iOSのスクロールを防止（ただしジャンルチップエリアは除外）
+// iOSのスクロールを防止（ただしセレクトボックスは除外）
 document.body.addEventListener('touchmove', (e) => {
-    // ジャンルチップエリア内のタッチは許可
-    if (e.target.closest('.genre-chips')) {
+    // セレクトボックス内のタッチは許可
+    if (e.target.closest('select')) {
         return;
     }
     e.preventDefault();

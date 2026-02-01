@@ -45,61 +45,44 @@ h1 {
     margin-bottom: 20px;
 }
 
-.genre-chips {
+.genre-select-container {
     display: flex;
+    align-items: center;
     gap: 10px;
-    overflow-x: auto;
-    padding: 10px 5px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
-    position: relative;
-}
-
-.genre-chips.scroll-start {
-    mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
-    -webkit-mask-image: linear-gradient(to right, black calc(100% - 20px), transparent);
-}
-
-.genre-chips.scroll-middle {
-    mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
-}
-
-.genre-chips.scroll-end {
-    mask-image: linear-gradient(to right, transparent, black 20px);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20px);
-}
-
-.genre-chips::-webkit-scrollbar {
-    display: none;
-}
-
-.genre-chip {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
     background: white;
-    color: #4f46e5;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.2s;
+    padding: 12px 15px;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.genre-chip:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.genre-select-container label {
+    color: #4f46e5;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
 }
 
-.genre-chip.active {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    color: white;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.5);
-    transform: scale(1.05);
+.genre-select-container select {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    color: #1f2937;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.genre-select-container select:hover {
+    border-color: #4f46e5;
+}
+
+.genre-select-container select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .action-buttons {
