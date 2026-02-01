@@ -53,10 +53,17 @@ async function loadCards() {
 
         populateGenreSelect();
 
-        // デフォルトで「家族」ジャンルを選択
+        // デフォルトで「家族」ジャンルを選択（存在しない場合は「すべて」）
         const defaultGenre = '家族';
-        genreSelect.value = defaultGenre;
-        selectGenre(defaultGenre);
+        const hasDefaultGenre = Array.from(genreSelect.options).some(opt => opt.value === defaultGenre);
+
+        if (hasDefaultGenre) {
+            genreSelect.value = defaultGenre;
+            selectGenre(defaultGenre);
+        } else {
+            genreSelect.value = '';
+            selectGenre('');
+        }
 
         displayCard();
 
@@ -80,6 +87,11 @@ async function loadCards() {
 // ジャンルセレクトボックスを作成
 function populateGenreSelect() {
     const genres = [...new Set(allCards.map(card => card.genre))];
+
+    // 既存のオプションをクリア（「すべて」オプション以外）
+    while (genreSelect.options.length > 1) {
+        genreSelect.remove(1);
+    }
 
     // 各ジャンルのオプションを追加
     genres.forEach(genre => {
