@@ -40,6 +40,18 @@
     "meaning": "パワーハラスメント"
   },
   {
+    "word": "モラハラ",
+    "meaning": "モラルハラスメント"
+  },
+  {
+    "word": "マタハラ",
+    "meaning": "マタニティハラスメント"
+  },
+  {
+    "word": "カスハラ",
+    "meaning": "カスタマーハラスメント（顧客による嫌がらせ）"
+  },
+  {
     "word": "育休",
     "meaning": "育児休暇"
   },
@@ -61,7 +73,11 @@
   },
   {
     "word": "終活",
-    "meaning": "終末活動"
+    "meaning": "終末活動（死に備えた活動）"
+  },
+  {
+    "word": "留活",
+    "meaning": "留学活動"
   },
   {
     "word": "グランピング",
@@ -73,7 +89,7 @@
   },
   {
     "word": "コピペ",
-    "meaning": "コピー&ペースト"
+    "meaning": "コピー＆ペースト"
   },
   {
     "word": "ググる",
@@ -124,10 +140,6 @@
     "meaning": "デジタルカメラ"
   },
   {
-    "word": "プロペラ",
-    "meaning": "プロペラー"
-  },
-  {
     "word": "ボールペン",
     "meaning": "ボールポイントペン"
   },
@@ -160,10 +172,6 @@
     "meaning": "フットワークが軽い"
   },
   {
-    "word": "気にピ",
-    "meaning": "気になるピープル（人）"
-  },
-  {
     "word": "きゃぱい",
     "meaning": "キャパオーバー"
   },
@@ -176,20 +184,8 @@
     "meaning": "メンタルブレイク"
   },
   {
-    "word": "おしゃピク",
-    "meaning": "おしゃれなピクニック"
-  },
-  {
     "word": "ワンチャン",
     "meaning": "ワンチャンス"
-  },
-  {
-    "word": "あーね",
-    "meaning": "ああ、なるほどね"
-  },
-  {
-    "word": "それな",
-    "meaning": "それはそうだね"
   },
   {
     "word": "り",
@@ -216,20 +212,8 @@
     "meaning": "男子高校生"
   },
   {
-    "word": "激おこぷんぷん丸",
-    "meaning": "激しく怒っている"
-  },
-  {
-    "word": "マジ卍",
-    "meaning": "まじでやばい・すごい"
-  },
-  {
     "word": "エモい",
     "meaning": "エモーショナル（感情的・情緒的）"
-  },
-  {
-    "word": "尊い",
-    "meaning": "推しが素晴らしい"
   },
   {
     "word": "推しメン",
@@ -248,203 +232,463 @@
     "meaning": "泣いている様子"
   },
   {
-    "word": "ぱおん",
-    "meaning": "ぴえんより悲しい"
-  },
-  {
-    "word": "ばぶ",
-    "meaning": "赤ちゃん言葉・甘えたい気持ち"
-  },
-  {
     "word": "NHK",
     "meaning": "日本放送協会"
   },
   {
     "word": "FBI",
-    "meaning": "連邦捜査局"
+    "meaning": "連邦捜査局（Federal Bureau of Investigation）"
   },
   {
     "word": "CIA",
-    "meaning": "中央情報局"
+    "meaning": "中央情報局（Central Intelligence Agency）"
   },
   {
     "word": "NASA",
-    "meaning": "アメリカ航空宇宙局"
+    "meaning": "アメリカ航空宇宙局（National Aeronautics and Space Administration）"
   },
   {
     "word": "WHO",
-    "meaning": "世界保健機関"
+    "meaning": "世界保健機関（World Health Organization）"
   },
   {
     "word": "UNESCO",
-    "meaning": "国際連合教育科学文化機関"
+    "meaning": "国際連合教育科学文化機関（United Nations Educational, Scientific and Cultural Organization）"
   },
   {
     "word": "UNICEF",
-    "meaning": "国際連合児童基金"
+    "meaning": "国際連合児童基金（United Nations Children's Fund）"
   },
   {
     "word": "NGO",
-    "meaning": "非政府組織"
+    "meaning": "非政府組織（Non-Governmental Organization）"
   },
   {
     "word": "NPO",
-    "meaning": "非営利組織"
+    "meaning": "非営利組織（Non-Profit Organization）"
   },
   {
     "word": "GDP",
-    "meaning": "国内総生産"
+    "meaning": "国内総生産（Gross Domestic Product）"
   },
   {
     "word": "GNP",
-    "meaning": "国民総生産"
+    "meaning": "国民総生産（Gross National Product）"
   },
   {
     "word": "GPS",
-    "meaning": "全地球測位システム"
+    "meaning": "全地球測位システム（Global Positioning System）"
   },
   {
     "word": "DNA",
-    "meaning": "デオキシリボ核酸"
+    "meaning": "デオキシリボ核酸（Deoxyribonucleic Acid）"
   },
   {
     "word": "RNA",
-    "meaning": "リボ核酸"
+    "meaning": "リボ核酸（Ribonucleic Acid）"
   },
   {
     "word": "ATM",
-    "meaning": "現金自動預払機"
+    "meaning": "現金自動預払機（Automated Teller Machine）"
   },
   {
     "word": "CD",
-    "meaning": "コンパクトディスク"
+    "meaning": "コンパクトディスク（Compact Disc）"
   },
   {
     "word": "DVD",
-    "meaning": "デジタルバーサタイルディスク"
+    "meaning": "デジタルバーサタイルディスク（Digital Versatile Disc）"
   },
   {
     "word": "USB",
-    "meaning": "ユニバーサルシリアルバス"
+    "meaning": "ユニバーサルシリアルバス（Universal Serial Bus）"
   },
   {
     "word": "Wi-Fi",
-    "meaning": "ワイヤレスフィデリティ"
+    "meaning": "ワイヤレスフィデリティ（Wireless Fidelity）"
   },
   {
     "word": "AI",
-    "meaning": "人工知能"
+    "meaning": "人工知能（Artificial Intelligence）"
   },
   {
     "word": "VR",
-    "meaning": "仮想現実"
+    "meaning": "仮想現実（Virtual Reality）"
   },
   {
     "word": "AR",
-    "meaning": "拡張現実"
+    "meaning": "拡張現実（Augmented Reality）"
   },
   {
     "word": "SNS",
-    "meaning": "ソーシャルネットワーキングサービス"
+    "meaning": "ソーシャルネットワーキングサービス（Social Networking Service）"
   },
   {
     "word": "DM",
-    "meaning": "ダイレクトメッセージ"
+    "meaning": "ダイレクトメッセージ（Direct Message）"
   },
   {
     "word": "FAQ",
-    "meaning": "よくある質問"
+    "meaning": "よくある質問（Frequently Asked Questions）"
   },
   {
     "word": "PDF",
-    "meaning": "ポータブルドキュメントフォーマット"
+    "meaning": "ポータブルドキュメントフォーマット（Portable Document Format）"
   },
   {
     "word": "URL",
-    "meaning": "統一資源位置指定子"
+    "meaning": "統一資源位置指定子（Uniform Resource Locator）"
   },
   {
     "word": "HTML",
-    "meaning": "ハイパーテキストマークアップ言語"
+    "meaning": "ハイパーテキストマークアップ言語（HyperText Markup Language）"
   },
   {
     "word": "CEO",
-    "meaning": "最高経営責任者"
+    "meaning": "最高経営責任者（Chief Executive Officer）"
   },
   {
     "word": "CFO",
-    "meaning": "最高財務責任者"
+    "meaning": "最高財務責任者（Chief Financial Officer）"
   },
   {
     "word": "COO",
-    "meaning": "最高執行責任者"
+    "meaning": "最高執行責任者（Chief Operating Officer）"
   },
   {
     "word": "CTO",
-    "meaning": "最高技術責任者"
+    "meaning": "最高技術責任者（Chief Technology Officer）"
   },
   {
     "word": "ASAP",
-    "meaning": "できるだけ早く"
+    "meaning": "できるだけ早く（As Soon As Possible）"
   },
   {
     "word": "FYI",
-    "meaning": "ご参考まで"
+    "meaning": "ご参考まで（For Your Information）"
   },
   {
     "word": "DIY",
-    "meaning": "日曜大工・自分でやる"
+    "meaning": "日曜大工・自分でやる（Do It Yourself）"
   },
   {
     "word": "DX",
-    "meaning": "デジタルトランスフォーメーション"
+    "meaning": "デジタルトランスフォーメーション（Digital Transformation）"
   },
   {
     "word": "SDGs",
-    "meaning": "持続可能な開発目標"
+    "meaning": "持続可能な開発目標（Sustainable Development Goals）"
   },
   {
     "word": "LGBT",
-    "meaning": "性的マイノリティの総称"
+    "meaning": "性的マイノリティの総称（Lesbian, Gay, Bisexual, Transgender）"
   },
   {
     "word": "PDCA",
-    "meaning": "計画・実行・評価・改善"
+    "meaning": "計画・実行・評価・改善（Plan, Do, Check, Act）"
   },
   {
     "word": "OJT",
-    "meaning": "職場内訓練"
+    "meaning": "職場内訓練（On-the-Job Training）"
   },
   {
     "word": "M&A",
-    "meaning": "合併と買収"
+    "meaning": "合併と買収（Mergers and Acquisitions）"
   },
   {
     "word": "B2B",
-    "meaning": "企業間取引"
+    "meaning": "企業間取引（Business to Business）"
   },
   {
     "word": "B2C",
-    "meaning": "企業対消費者取引"
+    "meaning": "企業対消費者取引（Business to Consumer）"
   },
   {
     "word": "MVP",
-    "meaning": "最優秀選手・最小限の製品"
+    "meaning": "最優秀選手（Most Valuable Player）"
   },
   {
     "word": "KPI",
-    "meaning": "重要業績評価指標"
+    "meaning": "重要業績評価指標（Key Performance Indicator）"
   },
   {
     "word": "ROI",
-    "meaning": "投資利益率"
+    "meaning": "投資利益率（Return On Investment）"
   },
   {
-    "word": "BtoB",
-    "meaning": "企業間取引"
+    "word": "ICT",
+    "meaning": "情報通信技術（Information and Communication Technology）"
   },
   {
-    "word": "BtoC",
-    "meaning": "企業対消費者取引"
+    "word": "IT",
+    "meaning": "情報技術（Information Technology）"
+  },
+  {
+    "word": "IoT",
+    "meaning": "モノのインターネット（Internet of Things）"
+  },
+  {
+    "word": "API",
+    "meaning": "アプリケーションプログラミングインターフェース（Application Programming Interface）"
+  },
+  {
+    "word": "OS",
+    "meaning": "オペレーティングシステム（Operating System）"
+  },
+  {
+    "word": "CPU",
+    "meaning": "中央処理装置（Central Processing Unit）"
+  },
+  {
+    "word": "GPU",
+    "meaning": "画像処理装置（Graphics Processing Unit）"
+  },
+  {
+    "word": "SSD",
+    "meaning": "ソリッドステートドライブ（Solid State Drive）"
+  },
+  {
+    "word": "HDD",
+    "meaning": "ハードディスクドライブ（Hard Disk Drive）"
+  },
+  {
+    "word": "LAN",
+    "meaning": "ローカルエリアネットワーク（Local Area Network）"
+  },
+  {
+    "word": "VPN",
+    "meaning": "仮想プライベートネットワーク（Virtual Private Network）"
+  },
+  {
+    "word": "QR",
+    "meaning": "クイックレスポンスコード（Quick Response）"
+  },
+  {
+    "word": "NFT",
+    "meaning": "非代替性トークン（Non-Fungible Token）"
+  },
+  {
+    "word": "ESG",
+    "meaning": "環境・社会・ガバナンス（Environment, Social, Governance）"
+  },
+  {
+    "word": "CSR",
+    "meaning": "企業の社会的責任（Corporate Social Responsibility）"
+  },
+  {
+    "word": "PR",
+    "meaning": "広報活動（Public Relations）"
+  },
+  {
+    "word": "OEM",
+    "meaning": "相手先ブランドによる生産（Original Equipment Manufacturer）"
+  },
+  {
+    "word": "OB",
+    "meaning": "卒業生・元メンバー（Old Boy）"
+  },
+  {
+    "word": "OG",
+    "meaning": "女性の卒業生・元メンバー（Old Girl）"
+  },
+  {
+    "word": "PTA",
+    "meaning": "父母と教師の会（Parent-Teacher Association）"
+  },
+  {
+    "word": "PM",
+    "meaning": "プロジェクトマネージャー（Project Manager）"
+  },
+  {
+    "word": "HR",
+    "meaning": "人事部門（Human Resources）"
+  },
+  {
+    "word": "IR",
+    "meaning": "投資家向け広報（Investor Relations）"
+  },
+  {
+    "word": "EC",
+    "meaning": "電子商取引（Electronic Commerce）"
+  },
+  {
+    "word": "EV",
+    "meaning": "電気自動車（Electric Vehicle）"
+  },
+  {
+    "word": "PHV",
+    "meaning": "プラグインハイブリッド車（Plug-in Hybrid Vehicle）"
+  },
+  {
+    "word": "FX",
+    "meaning": "外国為替証拠金取引（Foreign eXchange）"
+  },
+  {
+    "word": "ETF",
+    "meaning": "上場投資信託（Exchange Traded Fund）"
+  },
+  {
+    "word": "IPO",
+    "meaning": "新規株式公開（Initial Public Offering）"
+  },
+  {
+    "word": "BCP",
+    "meaning": "事業継続計画（Business Continuity Plan）"
+  },
+  {
+    "word": "SaaS",
+    "meaning": "サービスとしてのソフトウェア（Software as a Service）"
+  },
+  {
+    "word": "PaaS",
+    "meaning": "サービスとしてのプラットフォーム（Platform as a Service）"
+  },
+  {
+    "word": "UX",
+    "meaning": "ユーザー体験（User Experience）"
+  },
+  {
+    "word": "UI",
+    "meaning": "ユーザーインターフェース（User Interface）"
+  },
+  {
+    "word": "SEO",
+    "meaning": "検索エンジン最適化（Search Engine Optimization）"
+  },
+  {
+    "word": "CRM",
+    "meaning": "顧客関係管理（Customer Relationship Management）"
+  },
+  {
+    "word": "ERP",
+    "meaning": "統合基幹業務システム（Enterprise Resource Planning）"
+  },
+  {
+    "word": "RPA",
+    "meaning": "ロボティックプロセスオートメーション（Robotic Process Automation）"
+  },
+  {
+    "word": "5G",
+    "meaning": "第5世代移動通信システム（5th Generation）"
+  },
+  {
+    "word": "4K",
+    "meaning": "約4000×2000ピクセルの解像度（4 Kilo pixels）"
+  },
+  {
+    "word": "VHS",
+    "meaning": "家庭用ビデオ規格（Video Home System）"
+  },
+  {
+    "word": "FM",
+    "meaning": "周波数変調（Frequency Modulation）"
+  },
+  {
+    "word": "AM",
+    "meaning": "振幅変調（Amplitude Modulation）"
+  },
+  {
+    "word": "ICU",
+    "meaning": "集中治療室（Intensive Care Unit）"
+  },
+  {
+    "word": "MRI",
+    "meaning": "磁気共鳴画像法（Magnetic Resonance Imaging）"
+  },
+  {
+    "word": "CT",
+    "meaning": "コンピューター断層撮影（Computed Tomography）"
+  },
+  {
+    "word": "AED",
+    "meaning": "自動体外式除細動器（Automated External Defibrillator）"
+  },
+  {
+    "word": "PCR",
+    "meaning": "ポリメラーゼ連鎖反応（Polymerase Chain Reaction）。新型コロナ検査でも使用"
+  },
+  {
+    "word": "BMI",
+    "meaning": "体格指数（Body Mass Index）。体重÷身長²"
+  },
+  {
+    "word": "OTC",
+    "meaning": "市販薬（Over The Counter）"
+  },
+  {
+    "word": "UN",
+    "meaning": "国際連合（United Nations）"
+  },
+  {
+    "word": "NATO",
+    "meaning": "北大西洋条約機構（North Atlantic Treaty Organization）"
+  },
+  {
+    "word": "EU",
+    "meaning": "欧州連合（European Union）"
+  },
+  {
+    "word": "IMF",
+    "meaning": "国際通貨基金（International Monetary Fund）"
+  },
+  {
+    "word": "OPEC",
+    "meaning": "石油輸出国機構（Organization of the Petroleum Exporting Countries）"
+  },
+  {
+    "word": "ASEAN",
+    "meaning": "東南アジア諸国連合（Association of Southeast Asian Nations）"
+  },
+  {
+    "word": "G7",
+    "meaning": "主要7カ国首脳会議（Group of Seven）"
+  },
+  {
+    "word": "G20",
+    "meaning": "主要20カ国・地域首脳会議（Group of Twenty）"
+  },
+  {
+    "word": "PKO",
+    "meaning": "国連平和維持活動（Peace Keeping Operations）"
+  },
+  {
+    "word": "ODA",
+    "meaning": "政府開発援助（Official Development Assistance）"
+  },
+  {
+    "word": "IAEA",
+    "meaning": "国際原子力機関（International Atomic Energy Agency）"
+  },
+  {
+    "word": "JR",
+    "meaning": "旅客鉄道株式会社（Japan Railways）"
+  },
+  {
+    "word": "JAL",
+    "meaning": "日本航空（Japan Airlines）"
+  },
+  {
+    "word": "ANA",
+    "meaning": "全日本空輸（All Nippon Airways）"
+  },
+  {
+    "word": "JA",
+    "meaning": "農業協同組合（Japan Agricultural Cooperatives）"
+  },
+  {
+    "word": "NTT",
+    "meaning": "日本電信電話（Nippon Telegraph and Telephone）"
+  },
+  {
+    "word": "JAXA",
+    "meaning": "宇宙航空研究開発機構（Japan Aerospace Exploration Agency）"
+  },
+  {
+    "word": "NHK",
+    "meaning": "日本放送協会（Nippon Hoso Kyokai）"
+  },
+  {
+    "word": "JICA",
+    "meaning": "国際協力機構（Japan International Cooperation Agency）"
   }
 ]
