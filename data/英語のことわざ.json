@@ -1,0 +1,162 @@
+[
+  {
+    "word": "Actions speak louder than words",
+    "meaning": "言葉より行動が大切だ"
+  },
+  {
+    "word": "All that glitters is not gold",
+    "meaning": "光るものすべてが金とは限らない（見かけで判断するな）"
+  },
+  {
+    "word": "A penny saved is a penny earned",
+    "meaning": "節約したお金は稼いだも同然だ"
+  },
+  {
+    "word": "Better late than never",
+    "meaning": "遅くても、しないよりましだ"
+  },
+  {
+    "word": "Birds of a feather flock together",
+    "meaning": "類は友を呼ぶ"
+  },
+  {
+    "word": "Don't count your chickens before they hatch",
+    "meaning": "捕らぬ狸の皮算用"
+  },
+  {
+    "word": "Don't judge a book by its cover",
+    "meaning": "見かけで判断するな"
+  },
+  {
+    "word": "Every cloud has a silver lining",
+    "meaning": "どんな悪いことにも、必ず良い面がある"
+  },
+  {
+    "word": "Fortune favors the brave",
+    "meaning": "運は勇者に味方する"
+  },
+  {
+    "word": "Haste makes waste",
+    "meaning": "急ぎすぎると失敗する（急がば回れ）"
+  },
+  {
+    "word": "Honesty is the best policy",
+    "meaning": "正直が最善の策だ"
+  },
+  {
+    "word": "Kill two birds with one stone",
+    "meaning": "一石二鳥"
+  },
+  {
+    "word": "Knowledge is power",
+    "meaning": "知識は力なり"
+  },
+  {
+    "word": "Laughter is the best medicine",
+    "meaning": "笑いは最良の薬だ"
+  },
+  {
+    "word": "Look before you leap",
+    "meaning": "飛び込む前に見よ（慎重に行動せよ）"
+  },
+  {
+    "word": "No pain, no gain",
+    "meaning": "苦労なくして得るものなし"
+  },
+  {
+    "word": "Once bitten, twice shy",
+    "meaning": "一度懲りた者は慎重になる（羹に懲りて膾を吹く）"
+  },
+  {
+    "word": "Practice makes perfect",
+    "meaning": "習うより慣れよ"
+  },
+  {
+    "word": "Rome wasn't built in a day",
+    "meaning": "ローマは一日にして成らず（大事業は一朝一夕にはできない）"
+  },
+  {
+    "word": "Silence is golden",
+    "meaning": "沈黙は金なり"
+  },
+  {
+    "word": "The early bird catches the worm",
+    "meaning": "早起きは三文の徳"
+  },
+  {
+    "word": "The pen is mightier than the sword",
+    "meaning": "ペンは剣よりも強し"
+  },
+  {
+    "word": "Time flies",
+    "meaning": "光陰矢のごとし"
+  },
+  {
+    "word": "Too many cooks spoil the broth",
+    "meaning": "船頭多くして船山に登る"
+  },
+  {
+    "word": "When in Rome, do as the Romans do",
+    "meaning": "郷に入っては郷に従え"
+  },
+  {
+    "word": "You reap what you sow",
+    "meaning": "蒔いた種は自分で刈り取れ（自業自得）"
+  },
+  {
+    "word": "A friend in need is a friend indeed",
+    "meaning": "困った時の友こそ真の友"
+  },
+  {
+    "word": "Every dog has its day",
+    "meaning": "誰にでも輝く時がある"
+  },
+  {
+    "word": "The grass is always greener on the other side",
+    "meaning": "隣の芝は青く見える"
+  },
+  {
+    "word": "Don't put all your eggs in one basket",
+    "meaning": "一つのかごに卵を全部入れるな（リスクを分散せよ）"
+  },
+  {
+    "word": "A stitch in time saves nine",
+    "meaning": "時機を逃さず手を打て（転ばぬ先の杖）"
+  },
+  {
+    "word": "Curiosity killed the cat",
+    "meaning": "好奇心は身を滅ぼす（余計なことに首を突っ込むな）"
+  },
+  {
+    "word": "Ignorance is bliss",
+    "meaning": "知らぬが仏"
+  },
+  {
+    "word": "Let sleeping dogs lie",
+    "meaning": "藪をつついて蛇を出すな（触らぬ神に祟りなし）"
+  },
+  {
+    "word": "Out of sight, out of mind",
+    "meaning": "去る者は日々に疎し"
+  },
+  {
+    "word": "Strike while the iron is hot",
+    "meaning": "鉄は熱いうちに打て"
+  },
+  {
+    "word": "Time is money",
+    "meaning": "時は金なり"
+  },
+  {
+    "word": "Where there's a will, there's a way",
+    "meaning": "意志あるところに道は開ける"
+  },
+  {
+    "word": "Two wrongs don't make a right",
+    "meaning": "間違いで間違いは正せない"
+  },
+  {
+    "word": "There's no place like home",
+    "meaning": "我が家に勝る場所はない"
+  }
+]
